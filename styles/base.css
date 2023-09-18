@@ -1,36 +1,37 @@
-header {
+sheader {
     display: grid;
-    margin: 100px;
+    margin: 60px;
     margin-bottom: 0px;
+    margin-top: 0px;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: 250px;
     background-color: rgb(29, 77, 114);
 }
 
 img {
     padding: 15%;
-    align-self: right;
     margin-left: auto;
 }
 
 h1 {
     font-size: 65px;
     color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 nav ul {
     display: grid;
     list-style: none;
     align-items: center;
-    margin: 100px;
+    margin: 60px;
     margin-top: 0px;
     margin-bottom: 0px;
     grid-template-rows: repeat(5, 80px);
     font-size: 40px;
     text-align: center;
     background-color: black;
+    font-family: 'Raleway', sans-serif;
 }
 
 nav a {
@@ -40,8 +41,8 @@ nav a {
 
 main {
     display: grid;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 90px;
+    margin-right: 90px;
     align-items: center;
 }
 
@@ -50,6 +51,7 @@ h2 {
     text-align: center;
     color: rgb(51, 51, 51);
     border-bottom: 1px solid gray;
+    font-family: 'Raleway', sans-serif;
 }
 
 h3 {
@@ -57,29 +59,63 @@ h3 {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 40px;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     align-items: center;
     color: white;
     grid-template-rows: 100px;
     background-color: rgb(29, 77, 114);
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
-#card {
+.card {
     margin-top: 0px;
-    margin-bottom: 0px;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.card p {
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    align-items: center;
+    color: black;
+    line-height: 60px;
 }
 
 section ul {
     list-style: none;
+    font-family: 'Raleway', sans-serif;
 }
 
 footer {
-    display: grid;
     text-align: center;
-    align-items: center;
     line-height: 60px;
     font-size: 40px;
-    margin: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(29, 77, 114);
+    color: white;
+}
+
+footer p {
+    margin: 10px;
+    padding: 20px;
+}
+
+#flag {
+    padding: 0px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+    vertical-align: bottom;
+}
+
+#lastModified {
+    margin-top: -30px;
+    color: yellow;
 }
