@@ -12,10 +12,12 @@ footer {
 .banner {
     padding: 1rem;
     background-color: #eee;
+    text-align: center;
 }
 
 h1 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
 }
 
 main {
@@ -24,10 +26,18 @@ main {
     grid-gap: 1.5rem;
 }
 
+section {
+    padding: 1rem;
+}
+
 h2 {
     color: navy;
     text-align: left;
     grid-column: 1/3;
+}
+
+h3 {
+    margin-bottom: .5rem;
 }
 
 article p {
@@ -37,6 +47,7 @@ article p {
 .callout {
     color: black;
     background-color: #eee;
+    grid-column: 1 / 3;
     padding: 10px;
 }
 
