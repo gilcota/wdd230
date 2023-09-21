@@ -1,6 +1,6 @@
 header {
     display: grid;
-    margin: 60px;
+    margin: 20px;
     margin-bottom: 0px;
     margin-top: 0px;
     align-items: center;
@@ -12,10 +12,13 @@ header {
 img {
     padding: 15%;
     margin-left: auto;
+    margin-right: 20px;
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 24px;
+    margin-left: 15px;
+    margin-right: auto;
     color: white;
     font-family: 'Raleway', sans-serif;
 }
@@ -25,7 +28,7 @@ nav ul {
     list-style: none;
     align-items: center;
     padding: 0px;
-    margin: 60px;
+    margin: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
     grid-template-rows: repeat(5, 50px);
@@ -42,14 +45,14 @@ nav a {
 
 main {
     display: grid;
-    margin-left: 90px;
-    margin-right: 90px;
+    margin-left: 40px;
+    margin-right: 40px;
     align-items: center;
 }
 
 h2 {
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 19px;
     text-align: center;
     color: rgb(51, 51, 51);
     border-bottom: 1px solid gray;
@@ -72,14 +75,17 @@ h3 {
     border-bottom-right-radius: 0px;
 }
 
-.card {
+.card1,
+.card2 {
     margin-top: 0px;
     margin-bottom: 20px;
     border: 1px solid gray;
     border-radius: 10px;
+    height: 250px;
 }
 
-.card p {
+.card1 p,
+.card2 p {
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
     text-align: center;
@@ -88,17 +94,24 @@ h3 {
     line-height: 40px;
 }
 
+.card2 p {
+    padding: 20px 0;
+}
+
 section ul {
     list-style: none;
     font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    padding: 20px;
+    margin: 0px;
 }
 
 footer {
     text-align: center;
     line-height: 35px;
     font-size: 20px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-family: 'Raleway', sans-serif;
     background-color: rgb(29, 77, 114);
     color: white;
@@ -112,7 +125,6 @@ footer p {
 #flag {
     padding: 0px;
     height: 50px;
-
     margin-left: 20px;
     vertical-align: middle
 }
@@ -120,4 +132,5 @@ footer p {
 #lastModified {
     margin-top: -30px;
     color: yellow;
+    font-size: 15px;
 }
