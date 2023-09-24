@@ -14,8 +14,9 @@ header {
 
 main {
     display: grid;
-    grid-template-columns: auto;
-    grid-area: auto;
+    /* grid-template-columns: auto;
+    grid-area: auto; */
+    align-items: center;
 }
 
 h1,
@@ -34,9 +35,9 @@ h2 {
 section {
     background-color: rgb(211, 206, 206);
     margin: 10px;
+    border: 1px solid rgb(168, 160, 160);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    /* text-align: center; */
 }
 
 h3 {
@@ -55,14 +56,15 @@ p {
     font-size: 20px;
 }
 
+div {
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
 img {
-    display: block;
-    margin: auto;
-    align-content: center;
-    /* object-fit: cover; */
-    /* max-width: 340px; */
-    padding-left: 10px;
-    padding-right: 10px;
+    height: auto;
+    max-width: 100%;
+    border: 1px solid rgb(168, 160, 160);
 }
 
 footer {
