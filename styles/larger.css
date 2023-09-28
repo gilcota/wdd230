@@ -116,11 +116,24 @@
         font-size: 16.5px;
     }
 
+    #map {
+        text-align: center;
+        height: 300px;
+        margin-top: 30px;
+        margin-left: 90px;
+        margin-right: 90px;
+        /* margin-bottom: -10px; */
+    }
+
+    iframe {
+        width: 100%;
+    }
+
     footer {
         text-align: center;
         line-height: 35px;
         font-size: 20px;
-        margin-top: 30px;
+        margin-top: 20px;
         margin-left: 60px;
         margin-right: 60px;
         font-family: 'Raleway', sans-serif;
@@ -150,5 +163,25 @@
     #author br {
         display: none;
     }
+
+
+
+
+    /* Hamburguer button: larger view navigation */
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+
 
 }

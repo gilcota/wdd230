@@ -102,6 +102,20 @@ section ul {
     margin: 0px;
 }
 
+
+#map {
+    text-align: center;
+    height: 300px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+iframe {
+    width: 100%;
+}
+
+
 footer {
     text-align: center;
     line-height: 35px;
@@ -129,4 +143,96 @@ footer p {
     margin-top: -30px;
     color: yellow;
     font-size: 15px;
+}
+
+
+/*
+
+iframe {
+    /* text-align: center;
+    line-height: 35px;
+    font-size: 20px; */
+
+/*
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    /* font-family: 'Raleway', sans-serif;
+    background-color: rgb(29, 77, 114);
+    color: white; */
+
+
+/*
+    width: auto;
+    height: 400px;
+    object-fit: cover;
+    align-self: center;
+
+}
+*/
+
+
+
+
+/* Hamburguer button: small view navigation */
+#menu {
+    font-size: 2.5rem;
+    border: 1px solid rgb(29, 77, 114);
+    /* padding: .25rem .75rem; */
+    background-color: rgb(29, 77, 114);
+    color: white;
+    position: absolute;
+    top: .5rem;
+    right: 2rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+    color: rgb(99, 89, 148);
+    font-weight: bolder;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    /* background-color: #333; */
+    /* color: #fff; */
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation li a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+/*pseudo element*/
+.active::first-line {
+    color: yellow;
 }
