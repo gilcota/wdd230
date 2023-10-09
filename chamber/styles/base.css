@@ -39,6 +39,11 @@ ul {
     list-style: none;
 }
 
+
+nav {
+    display: none;
+}
+
 /* nav {
     grid-column: 8 / 9;
 } */
