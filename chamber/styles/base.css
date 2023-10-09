@@ -226,3 +226,49 @@ button {
     justify-content: center;
     align-items: center;
 }
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 40px);
+    margin: 40px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    align-items: center;
+    background-color: #577399;
+}
+
+#logo2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    width: 80px;
+    height: 80px;
+    /* place-self: center; */
+    justify-self: right;
+}
+
+#author {
+    grid-column: 2 / 8;
+    grid-row: 4 / 5;
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 7px;
+
+    border-top: 1px solid white;
+}
+
+#chamber-name {
+    grid-column: 3 / 5;
+    grid-row: 1 / 4;
+    color: white;
+    justify-self: left;
+    padding-left: 20px;
+}
+
+#contact {
+    grid-column: 6 / 8;
+    grid-row: 1 / 4;
+    color: white;
+    /* place-self: center; */
+}
