@@ -164,7 +164,6 @@ button {
     margin-right: 80px;
     align-self: center;
     color: #495867;
-    background-color: #F0F3F8;
 }
 
 #spotlight1 {
@@ -201,6 +200,11 @@ button {
     align-items: center;
 }
 
+#spotlight1,
+#spotlight2,
+#spotlight3 {
+    background-color: #F0F3F8;
+}
 
 .weather {
     height: 40px;
