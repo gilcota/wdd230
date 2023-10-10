@@ -33,6 +33,7 @@ nav ul {
     margin: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
+    grid-template-rows: repeat(5, 50px);
     font-size: 20px;
     text-align: center;
     background-color: black;

@@ -6,82 +6,8 @@ header {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 60px;
+    grid-template-rows: 60px 1fr;
     background-color: #577399;
-}
-
-#logo {
-    grid-column: 3 / 5;
-    width: 50px;
-    height: 50px;
-    justify-self: center;
-    /* padding: 15px; */
-    /* margin-left: 35px; */
-}
-
-h1 {
-    grid-column: 5 / 8;
-    font-size: 18px;
-    color: white;
-    margin-left: -20px;
-}
-
-h2 {
-    font-size: 23px;
-}
-
-h3 {
-    font-size: 20px;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-
-nav {
-    display: none;
-}
-
-/* nav {
-    grid-column: 8 / 9;
-} */
-
-/* nav ul {
-    display: grid;
-    list-style: none;
-    align-items: center;
-    padding: 0px;
-    margin: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
- */
-/* grid-column: 8 / 9;
-
-    display: grid;
-    list-style: none;
-    align-items: center;
-    padding: 0px;
-    margin: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    grid-template-rows: repeat(3, 50px);
-    font-size: 20px;
-    text-align: center; */
-/* } */
-
-nav li {
-    float: left;
-    margin-left: 40px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
 }
 
 #facebook {
@@ -98,7 +24,54 @@ nav a {
     width: 30px;
     height: 30px;
     justify-self: center;
-    /* margin-right: 35px; */
+}
+
+#logo {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    width: 50px;
+    height: 50px;
+    justify-self: center;
+}
+
+h1 {
+    grid-column: 4 / 8;
+    grid-row: 1 / 2;
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.navigation {
+    grid-column: 1 / 9;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    text-align: center;
+    background-color: #48B5E8;
+}
+
+.navigation li {
+    float: inline-start;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+h2 {
+    font-size: 23px;
+}
+
+h3 {
+    font-size: 20px;
 }
 
 .heroe-box {
@@ -121,7 +94,7 @@ nav a {
 
 
 
-button {
+#join {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     place-self: center;
@@ -154,14 +127,10 @@ button {
 }
 
 #event1 {
-    /* text-align: center; */
     grid-row: 1 / 3;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* border-right: 1px solid gray;
-    border-left: 1px solid gray; */
 }
 
 #member-title {
@@ -169,17 +138,6 @@ button {
     margin-bottom: 10px;
     color: #495867;
 }
-
-/* .spotlights {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 150px;
-    margin-top: 20px;
-    margin-left: 80px;
-    margin-right: 80px;
-    align-self: center;
-    color: #495867;
-} */
 
 #spotlight1,
 #spotlight2,
@@ -259,4 +217,71 @@ footer {
     grid-row: 2 / 3;
     color: white;
     justify-self: center;
+}
+
+/* Hamburguer button: small view navigation */
+#menu {
+    display: block;
+    grid-column: 8 / 9;
+    grid-row: 1/2;
+    font-size: 30px;
+    border: 1px solid #577399;
+    background-color: #577399;
+    color: white;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+    color: white;
+    font-weight: bolder;
+}
+
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation li a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+    display: block;
+    grid-column: 1 / 9;
+    grid-row: 2 / 6;
+
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+/*pseudo element*/
+.active::first-line {
+    color: yellow;
 }
