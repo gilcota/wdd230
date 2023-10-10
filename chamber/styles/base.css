@@ -57,13 +57,13 @@ ul {
     align-items: center;
     text-align: center;
     background-color: #48B5E8;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .navigation li {
     float: inline-start;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
 
 
@@ -284,5 +284,5 @@ footer {
 
 /*pseudo element*/
 .active::first-line {
-    color: yellow;
+    color: black;
 }
