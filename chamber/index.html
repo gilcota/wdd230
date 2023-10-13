@@ -43,7 +43,8 @@
 
     <main>
         <div class="heroe-box">
-            <img id="heroe-image" src="images/placeholder-image.png" alt="Placeholder Image">
+            <img id="heroe-image" src="images/pueblito-pyramid.png"
+                alt="Panoramic view of El Pueblito pyramid at Corregidora, Querétaro, México">
             <button id="join" title="Join the Chamber"><b>Join the Chamber</b></button>
         </div>
 
@@ -55,13 +56,16 @@
         </section>
 
         <section class="spotlights">
-            <h3 id="spotlight1"> Spotlight Company 1</h3>
-            <h3 id="spotlight2">Spotlight Company 2</h3>
-            <h3 id="spotlight3">Spotlight Company 3</h3>
+            <h3 id="spotlight1">🏬 Spotlight Company 1</h3>
+            <h3 id="spotlight2">🏭 Spotlight Company 2</h3>
+            <h3 id="spotlight3">🚚 Spotlight Company 3</h3>
         </section>
 
         <section class="weather">
-            <h3>Weather XX | °C XX | Humidity: xx | Wind Chill: xx</h3>
+            <h3>Weather&ensp;</h3>
+            <img id="weather-icon" src="images/weather-icon.png" alt="Icon of the actual weather, partly cloudy">
+            <h3>&ensp;XX°C&ensp;-&ensp;Partly Cloudy&ensp;|&ensp;Humidity: xx&ensp;|&ensp;Wind Chill: xx
+            </h3>
         </section>
 
     </main>
@@ -69,7 +73,14 @@
     <footer>
         <img id="logo2" src="images/ccc-logo.PNG" alt="Corregidora Chamber of Commerce Logo">
         <p id="chamber-name"><em><b>Corregidora <br>Chamber of Commerce</b> <br> Main xxxx <br> Address xxxx</em></p>
-        <p id="contact">xxxx@xxxx.com <br>+(xx) xx-xxxx-xxxx <br> 📍 Location Map</p>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11981.66225479032!2d-100.45157567540808!3d20.545946910390096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d34f7fb62e0e5d%3A0xcfe73619000dd88c!2sCorregidora%20Municipality%2C%20Qro.!5e0!3m2!1sen!2smx!4v1697159602430!5m2!1sen!2smx"
+                width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p id="contact">xxxx@xxxx.com <br>+(xx) xx-xxxx-xxxx</p>
+        <!-- <br> 📍 Location Map -->
         <p id="author">
             &copy;<span id="currentYear"></span> Corregidora Chamber | <b>Mahonri Gil</b> | WDD 230 Project | <span
                 id="lastModified">Last Modified</span>
