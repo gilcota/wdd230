@@ -58,6 +58,7 @@ ul {
     text-align: center;
     background-color: #48B5E8;
     font-size: 20px;
+    display: none;
 }
 
 .navigation li {
@@ -268,9 +269,13 @@ iframe {
 
 
 .navigation {
-    display: flex;
+    display: none;
     flex-direction: column;
     list-style: none;
+}
+
+.navigation ul {
+    margin: 0px;
 }
 
 .navigation li {
@@ -291,6 +296,10 @@ iframe {
 }
 
 /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open {
+    display: block;
+}
+
 .open li {
     display: block;
     grid-column: 1 / 9;
