@@ -455,6 +455,7 @@ html {
     -webkit-overflow-scrolling: touch;
     background: none;
     background-color: var(--bg-color);
+    color: var(--font-color);
     top: 150px;
 }
 
@@ -462,16 +463,15 @@ html {
 
     --font-color: #0f0f0f;
     --bg-color: #fefefe;
+    color: white;
+
 
 }
 
+
 [data-theme="dark"] {
 
-    --font-color: #fefefe;
+    --font-color: white;
     --bg-color: #121212;
-
-    #member-title {
-        color: white;
-    }
 
 }

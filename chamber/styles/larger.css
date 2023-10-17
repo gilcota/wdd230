@@ -103,7 +103,7 @@
 
     h3 {
         font-size: 20px;
-        margin-top: 15px;
+        /* margin-top: 15px; */
     }
 
     .weather-h3 {
@@ -320,6 +320,8 @@
         background-color: #F0F3F8;
         padding-left: 40px;
         padding-right: 40px;
+        padding-top: 40px;
+        padding-bottom: 0px;
 
     }
 
@@ -339,7 +341,7 @@
 
     .weather {
         height: 40px;
-        margin-top: 50px;
+        margin-top: 60px;
         margin-left: 60px;
         margin-right: 60px;
         align-self: center;
