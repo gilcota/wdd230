@@ -116,7 +116,7 @@ ul {
 }
 
 .navigation {
-    grid-column: 1 / 9;
+    grid-column: 1 / 10;
     grid-row: 2 / 3;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
@@ -425,7 +425,7 @@ iframe {
 
 .open li {
     display: block;
-    grid-column: 1 / 9;
+    grid-column: 1 / 10;
     grid-row: 2 / 6;
 
     width: 100%;
