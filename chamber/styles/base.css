@@ -2,6 +2,74 @@ html {
     font-family: 'Asap Condensed', sans-serif;
 }
 
+
+
+
+
+/* DARK MODE SWITCH */
+.switch {
+    /* height: 100px; */
+    /* position: fixed; */
+    grid-column: 9 / 10;
+    /* right: 50px; */
+    /* top: 50px; */
+    margin-right: 10px;
+    margin-top: 8px;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 28px;
+    position: relative;
+    width: 50px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: white;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #577399;
+    bottom: 4px;
+    content: "";
+    height: 20px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 20px;
+}
+
+input:checked+.slider {
+    background-color: black;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 28px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+
+
 header {
     display: grid;
     align-items: center;
@@ -39,7 +107,7 @@ h1 {
     grid-row: 1 / 2;
     font-size: 20px;
     color: white;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 ol,
@@ -155,8 +223,9 @@ p {
 
 #member-title {
     text-align: center;
+    margin-top: 20px;
     margin-bottom: 10px;
-    color: #495867;
+    color: #2D2177;
 }
 
 #spotlight1,
@@ -306,6 +375,8 @@ iframe {
     height: 40px;
     justify-content: center;
     align-items: center;
+    margin-top: 5px;
+    margin-left: 3px;
 }
 
 #menu::before {
@@ -367,4 +438,40 @@ iframe {
 /*pseudo element*/
 .active::first-line {
     color: black;
+}
+
+
+
+
+
+
+
+html {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    background: none;
+    background-color: var(--bg-color);
+    top: 150px;
+}
+
+:root {
+
+    --font-color: #0f0f0f;
+    --bg-color: #fefefe;
+
+}
+
+[data-theme="dark"] {
+
+    --font-color: #fefefe;
+    --bg-color: #121212;
+
+    #member-title {
+        color: white;
+    }
+
 }
