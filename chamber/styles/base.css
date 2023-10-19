@@ -105,9 +105,9 @@ header {
 h1 {
     grid-column: 4 / 8;
     grid-row: 1 / 2;
-    font-size: 20px;
+    font-size: 19px;
     color: white;
-    margin-left: 10px;
+    margin-left: 5px;
     margin-top: -10px;
     margin-bottom: -10px;
 }
