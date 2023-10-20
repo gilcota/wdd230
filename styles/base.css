@@ -192,34 +192,6 @@ footer p {
 }
 
 
-/*
-
-iframe {
-    /* text-align: center;
-    line-height: 35px;
-    font-size: 20px; */
-
-/*
-    
-    margin-left: 20px;
-    margin-right: 20px;
-    /* font-family: 'Raleway', sans-serif;
-    background-color: rgb(29, 77, 114);
-    color: white; */
-
-
-/*
-    width: auto;
-    height: 400px;
-    object-fit: cover;
-    align-self: center;
-
-}
-*/
-
-
-
-
 /* Hamburguer button: small view navigation */
 #menu {
     font-size: 2.5rem;
@@ -272,6 +244,7 @@ iframe {
 .open li {
     display: block;
     width: 100%;
+
 }
 
 .open li a {
@@ -281,4 +254,15 @@ iframe {
 /*pseudo element*/
 .active::first-line {
     color: yellow;
+}
+
+.herolabelshift {
+    position: absolute;
+    top: 395px;
+    right: 50px;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: .1rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
 }

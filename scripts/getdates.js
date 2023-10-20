@@ -6,8 +6,10 @@ document.querySelector('#lastModified').textContent = `Last Modification: ${docu
 
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
+const herolabel = document.querySelector('.herolabel');
 
 hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
+    herolabel.classList.toggle('herolabelshift')
     hamButton.classList.toggle('open');
 });
