@@ -206,6 +206,17 @@
 
 
 
+
+    /* .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        border: 3px solid green;
+      } */
+
+
+
     /* Hamburguer button: larger view navigation */
     #menu {
         display: none;
@@ -220,13 +231,5 @@
         display: block;
         flex: 1 1 100%;
     }
-
-    /* .center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 200px;
-        border: 3px solid green;
-      } */
 
 }
