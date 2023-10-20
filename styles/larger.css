@@ -48,6 +48,41 @@
         text-decoration: none;
     }
 
+    .hero img {
+        width: 960px;
+        height: 600px;
+        padding: 0px;
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 1 / 4;
+    }
+
+    .herolabel {
+        position: absolute;
+        top: 300px;
+        right: 255px;
+        background: radial-gradient(#fff, #4D5B97);
+        border: 1px solid rgba(0, 0, 0, .75);
+        padding: 1.5rem;
+        box-shadow: 0 0 3rem #fff;
+        opacity: 0.75;
+        /* Buenas */
+    }
+
+    .herolabel p {
+        margin: 0;
+        padding: .25rem;
+        font-weight: 700;
+        font-size: 2rem;
+        font-family: "Great Vibes", serif;
+    }
+
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
