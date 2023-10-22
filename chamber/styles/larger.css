@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 1000px) {
     html {
         font-family: 'Asap Condensed', sans-serif;
     }
@@ -29,6 +29,7 @@
         background-color: white;
         bottom: 0;
         cursor: pointer;
+        margin-left: 0px;
         left: 0;
         position: absolute;
         right: 0;
@@ -159,21 +160,73 @@
         margin-right: 35px;
     }
 
+
+
+
+
+
+
+
+    .herolabell {
+        display: block;
+        position: absolute;
+
+        width: 10%;
+        text-align: center;
+        margin-left: 60px;
+        right: 0px;
+        left: 0px;
+
+        /* height: 100px; */
+
+        background: radial-gradient(#fff, #4D5B97);
+        border: 1px solid rgba(0, 0, 0, .75);
+        padding: .1rem;
+        box-shadow: 0 0 3rem #fff;
+        opacity: 0.75;
+    }
+
+    .herolabell p {
+        margin: 0;
+        padding: .25rem;
+        font-weight: 700;
+        font-size: 50px;
+    }
+
+
+    .herolabelm,
+    .herolabels {
+        display: none;
+    }
+
+
+
+
+
+
+
     .heroe-box {
         height: 300px;
         margin-top: 20px;
         margin-left: 60px;
         margin-right: 60px;
 
-        display: grid;
+
+
+        /*
+        borrar para regresar a heroe normal
+        */
+
+
+        /* display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        background-color: #F0F3F8;
+        background-color: #F0F3F8; */
     }
 
     #heroe-image {
-        grid-column: 1 / 4;
-        grid-row: 1 / 4;
+        /* grid-column: 1 / 4;
+        grid-row: 1 / 4; */
         width: 100%;
         height: 300px;
         border: 1px solid gray;
@@ -209,7 +262,7 @@
         border: 1px solid gray;
         align-self: center;
         color: #495867;
-        background-image: url("../images/event-background.PNG");
+        background-image: url("../images/event-background.webp");
     }
 
     #events-image {
@@ -387,6 +440,8 @@
         text-align: center;
         margin-top: 0px;
         padding-top: 7px;
+        margin-left: 0px;
+        margin-right: 0px;
 
         border-top: 1px solid white;
     }
@@ -415,6 +470,8 @@
         grid-column: 6 / 7;
         grid-row: 1 / 4;
         color: white;
+        margin-left: 30px;
+        /* margin-left: 0px; */
     }
 
 

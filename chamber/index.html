@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +29,7 @@
 <body>
 
     <header>
-        <img id="logo" src="images/ccc-logo.PNG" alt="Corregidora Chamber of Commerce Logo">
+        <img id="logo" src="images/ccc-logo.webp" alt="Corregidora Chamber of Commerce Logo">
         <h1> <b>Corregidora<br>Chamber of Commerce</b></h1>
         <button id="menu" title="Menu"></button>
         <nav class="navigation">
@@ -40,8 +41,8 @@
             </ul>
         </nav>
 
-        <img id="facebook" src="images/facebook.png" alt="Facebook Fan Page Link">
-        <img id="linkedin" src="images/linkedin.png" alt="LinkedIn Fan Page Link">
+        <img id="facebook" src="images/facebook.webp" alt="Facebook Fan Page Link">
+        <img id="linkedin" src="images/linkedin.webp" alt="LinkedIn Fan Page Link">
 
         <!-- DARK MODE SWITCH -->
         <div class="switch">
@@ -54,14 +55,40 @@
     </header>
 
     <main>
-        <div class="heroe-box">
-            <img id="heroe-image" src="images/pueblito-pyramid.png"
+
+
+        <!-- <div class="heroe-box">
+            <img id="heroe-image" src="images/pueblito-pyramid.webp"
                 alt="Panoramic view of El Pueblito pyramid at Corregidora, Querétaro, México">
             <button id="join" title="Join the Chamber"><b>Join the Chamber</b></button>
+        </div> -->
+
+
+        <div class="herolabell">
+            <p>large</p>
         </div>
 
+        <div class="herolabelm">
+            <p>medium</p>
+        </div>
+
+        <div class="herolabels">
+            <p>small</p>
+        </div>
+
+        <div class="heroe-box">
+            <picture>
+                <source srcset="images/small.webp" media="(max-width: 500px)">
+                <source srcset="images/medium.webp" media="(max-width: 1000px)">
+                <img id="heroe-image" src="images/large.webp"
+                    alt="Panoramic view of El Pueblito pyramid at Corregidora, Querétaro, México" width="1320"
+                    height="300">
+            </picture>
+        </div>
+
+
         <section class="events">
-            <img id="events-image" src="images/events.png" alt="Event on calendar image">
+            <img id="events-image" src="images/events.webp" alt="Event on calendar image">
             <h2 id="events-h2"><i>Events</i></h2>
 
             <div id="event1">
@@ -119,7 +146,7 @@
 
         <section class="weather">
             <h3 class="weather-h3">Weather&ensp;</h3>
-            <img id="weather-icon" src="images/weather-icon.png" alt="Icon of the actual weather, partly cloudy">
+            <img id="weather-icon" src="images/weather-icon.webp" alt="Icon of the actual weather, partly cloudy">
             <h3 class="weather-h3">&ensp;XX°C&ensp;-&ensp;Partly Cloudy&ensp;|&ensp;Humidity: xx&ensp;|&ensp;Wind Chill:
                 xx
             </h3>
@@ -128,7 +155,7 @@
     </main>
 
     <footer>
-        <img id="logo2" src="images/ccc-logo.PNG" alt="Corregidora Chamber of Commerce Logo">
+        <img id="logo2" src="images/ccc-logo.webp" alt="Corregidora Chamber of Commerce Logo">
         <p id="chamber-name"><em><b>Corregidora <br>Chamber of Commerce</b> <br> Main xxxx <br> Address xxxx</em></p>
         <div class="map">
             <iframe

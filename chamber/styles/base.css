@@ -149,19 +149,70 @@ h3 {
     margin-left: 5px;
 }
 
+
+
+
+
+
+
+.herolabels {
+    display: block;
+    position: absolute;
+
+    width: 18%;
+    text-align: center;
+    /* margin-left: 10px; */
+    right: 0px;
+    left: 0px;
+
+    /* height: 100px; */
+
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: .1rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+}
+
+.herolabels p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+
+.herolabell,
+.herolabelm {
+    display: none;
+}
+
+
+
+
+
+
 .heroe-box {
     height: 160px;
     margin-top: 10px;
 
-    display: grid;
+
+
+    /*
+    borrar para regresar a heroe normal
+    */
+
+
+
+    /* display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    background-color: #F0F3F8;
+    background-color: #F0F3F8; */
 }
 
 #heroe-image {
-    grid-column: 1 / 2;
-    grid-row: 1 / 4;
+    /* grid-column: 1 / 2;
+    grid-row: 1 / 4; */
     width: 100%;
     height: 160px;
     border: 1px solid gray;
@@ -192,7 +243,7 @@ h3 {
 
     border: 1px solid gray;
     color: #495867;
-    background-image: url("../images/event-background.PNG");
+    background-image: url("../images/event-background.webp");
 }
 
 #events-image,
