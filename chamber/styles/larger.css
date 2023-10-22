@@ -109,6 +109,8 @@
 
     .weather-h3 {
         margin-top: 0px;
+        padding: 0px;
+        margin: 0px;
     }
 
     ol,
@@ -393,6 +395,8 @@
     }
 
     .weather {
+        display: grid;
+        grid-template-columns: ;
         height: 40px;
         margin-top: 60px;
         margin-left: 60px;

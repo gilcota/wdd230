@@ -347,7 +347,10 @@ p {
 }
 
 .weather-h3 {
-    padding-left: 10px;
+    padding-left: 5px;
+    margin: 0px;
+    line-height: 40px;
+    text-align: center;
 }
 
 footer {
