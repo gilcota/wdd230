@@ -150,14 +150,14 @@
 
     #facebook {
         grid-column: 16 / 17;
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
     }
 
-    s #linkedin {
+    #linkedin {
         grid-column: 17 / 18;
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         margin-right: 0px;
     }
 
