@@ -75,11 +75,12 @@
         /* Buenas */
     }
 
-    .herolabel p {
+    .herolabel h1 {
         margin: 0;
         padding: .25rem;
         font-weight: 700;
         font-size: 2rem;
+        color: black;
         font-family: 'Raleway', sans-serif;
     }
 
