@@ -539,7 +539,83 @@ html {
 
 #sidebar {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, auto);
     grid-gap: 8px;
     padding: 8px;
+    color: black;
+    border-color: black;
+}
+
+#sidebar h2 {
+    text-align: center;
+}
+
+#sb1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#sb2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#sb3 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+#sb4 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+#sb5 {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+}
+
+#sb6 {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+    height: 450px;
+}
+
+#calendar {
+    height: 450px;
+    max-width: 100%;
+}
+
+#img1 {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img2 {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+#img3 {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+}
+
+#img4 {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+}
+
+#img5 {
+    grid-column: 2 / 4;
+    grid-row: 5 / 6;
+}
+
+#img6 {
+    grid-column: 2 / 4;
+    grid-row: 6 / 7;
 }
