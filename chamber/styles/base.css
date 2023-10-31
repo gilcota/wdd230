@@ -531,3 +531,15 @@ html {
     --bg-color: #121212;
 
 }
+
+
+
+/*Discover webpage*/
+
+
+#sidebar {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 8px;
+    padding: 8px;
+}

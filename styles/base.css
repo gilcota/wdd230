@@ -70,11 +70,12 @@ nav a {
     opacity: 0.75;
 }
 
-.herolabel p {
+.herolabel h2 {
     margin: 0;
     padding: .25rem;
     font-weight: 700;
     font-size: 11px;
+    color: black;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -265,4 +266,8 @@ footer p {
     padding: .1rem;
     box-shadow: 0 0 3rem #fff;
     opacity: 0.75;
+}
+
+iframe {
+    border: 0;
 }
