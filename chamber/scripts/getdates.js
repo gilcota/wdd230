@@ -37,7 +37,7 @@ if (numVisits == 0) {
     visitsDisplay.textContent = `Welcome! Let us know if you have any questions.`;
 } else if ((today - timeVisits) < msToDays) {
     visitsDisplay.textContent = `Back so soon! Awesome!`;
-} else {
+} else if ((today - timeVisits) >= msToDays) {
     visitsDisplay.textContent = `You last visited ${((today - timeVisits) / msToDays).toFixed(0)} days ago.`;
 }
 
@@ -50,9 +50,8 @@ if (numVisits == 0) {
 
 // 4️⃣ increment the number of visits by one.
 numVisits++;
-timeVisits = today - timeVisits;
+timeVisits = today;
 
-visitsDays.textContent = today;
 // 5️⃣ store the new visit total into localStorage, key=numVisits-ls
 // 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
 

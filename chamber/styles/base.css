@@ -594,6 +594,12 @@ html {
     border: 1px solid black;
 }
 
+#sbw {
+    border: 1px solid black;
+    align-items: center;
+    font-size: 18px;
+}
+
 #info {
     display: flex;
     flex-direction: column;
