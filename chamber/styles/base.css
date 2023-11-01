@@ -559,6 +559,10 @@ iframe {
     font-size: 18px;
 }
 
+#visits {
+    text-align: center;
+}
+
 #info {
     display: flex;
     flex-direction: column;

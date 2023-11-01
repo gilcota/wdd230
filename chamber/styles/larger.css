@@ -565,6 +565,10 @@
         font-size: 25px;
     }
 
+    #visits {
+        text-align: center;
+    }
+
     #sb1 {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
