@@ -627,8 +627,7 @@
     }
 
     #calendar {
-        height: 200px;
-        width: 300px;
+        height: 300px;
         border: 1px solid black;
         display: flex;
         flex-direction: column;
@@ -636,7 +635,7 @@
         align-self: center;
         margin-left: -5px;
         margin-bottom: 0px;
-
+        overflow: hidden;
     }
 
     #images {
