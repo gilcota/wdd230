@@ -561,7 +561,7 @@
 
     #sbw {
         border: 1px solid black;
-        /* align-items: center; */
+        align-items: center;
         font-size: 25px;
     }
 

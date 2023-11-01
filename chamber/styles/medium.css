@@ -581,12 +581,14 @@
 
     #sbw {
         border: 1px solid black;
-        /* align-items: center; */
+        align-items: center;
+        text-align: center;
         font-size: 20px;
     }
 
     #visits {
         text-align: center;
+        align-items: center;
     }
 
     #sb1 {
