@@ -497,47 +497,6 @@ iframe {
 }
 
 
-
-
-
-
-
-html {
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-    background: none;
-    background-color: var(--bg-color);
-    color: var(--font-color);
-    top: 150px;
-}
-
-:root {
-
-    --font-color: #0f0f0f;
-    --bg-color: #fefefe;
-    color: white;
-
-
-}
-
-
-[data-theme="dark"] {
-
-    --font-color: white;
-    --bg-color: #121212;
-
-
-}
-
-
-
-
-
-
 /*Discover webpage details*/
 /*Discover webpage details*/
 /*Discover webpage details*/
@@ -588,7 +547,8 @@ html {
 #sb3,
 #sb4,
 #sb5,
-#sb6 {
+#sb6,
+#sbw {
     margin-bottom: 20px;
     background-color: white;
     border: 1px solid black;
@@ -661,4 +621,36 @@ html {
 
 .local-photo {
     margin-bottom: -10px;
+}
+
+
+html {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    background: none;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    top: 150px;
+}
+
+:root {
+
+    --font-color: #0f0f0f;
+    --bg-color: #fefefe;
+    color: white;
+
+
+}
+
+
+[data-theme="dark"] {
+
+    --font-color: white;
+    --bg-color: #121212;
+
+
 }

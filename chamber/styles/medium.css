@@ -497,31 +497,6 @@
 
 
 
-    html {
-        overflow: hidden;
-        width: 100vw;
-        height: 100vh;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        -webkit-overflow-scrolling: touch;
-        background: none;
-        background-color: var(--bg-color);
-        top: 150px;
-    }
-
-    :root {
-
-        --font-color: #0f0f0f;
-        --bg-color: #fefefe;
-
-    }
-
-    [data-theme="dark"] {
-
-        --font-color: #fefefe;
-        --bg-color: #121212;
-    }
-
     /*Discover webpage details*/
     /*Discover webpage details*/
     /*Discover webpage details*/
@@ -566,11 +541,12 @@
         /* align-self: center; */
     }
 
-    #sidebar #sb1,
-    #sidebar #sb2,
-    #sidebar #sb3,
-    #sidebar #sb4,
-    #sidebar #sb5 {
+    #sb1,
+    #sb2,
+    #sb3,
+    #sb4,
+    #sb5,
+    #sbw {
         margin-bottom: 20px;
         background-color: white;
         /* padding-left: 10px;
@@ -690,6 +666,32 @@
 
     .local-photo {
         margin-bottom: -10px;
+    }
+
+
+    html {
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        background: none;
+        background-color: var(--bg-color);
+        top: 150px;
+    }
+
+    :root {
+
+        --font-color: #0f0f0f;
+        --bg-color: #fefefe;
+
+    }
+
+    [data-theme="dark"] {
+
+        --font-color: #fefefe;
+        --bg-color: #121212;
     }
 
 }
