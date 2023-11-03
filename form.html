@@ -22,6 +22,7 @@
     </header>
     <nav>
         <ul class="navigation">
+            <li><a href="index.html" target="_blank">Home</a></li>
             <li><a href="#" class="active">| Form |</a></li>
             <li><a href="lesson03/chamber-site-plan.html" target="_blank">Site Plan</a></li>
             <li><a href="chamber/" target="_blank">Chamber</a></li>
@@ -35,29 +36,35 @@
         <div id="formmessage"></div>
         <form method="get" action="record.html">
 
-            <legend>Simple Form</legend>
-            <label class="top">Username* <input type="text" id="username" name="username" required></label>
-            <label class="top">Password* <input type="password" id="password" name="password" required
-                    pattern="[A-Za-z0-9]{8}"
-                    title="Password must be at least eight (8) characters long and can only be alpha-numeric"></label>
-            <label class="top">Confirm Password* <input type="password" id="passwordr" name="passwordr" required
-                    pattern="[A-Za-z0-9]{8}"></label>
-            <label class="top">Email* <input type="email" id="email" name="email" required
-                    pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
-            <label class="top">Page Rating <div id="rangevalue">1</div><input type="range" id="rating" name="rating"
-                    min="1" max="10" value="1" step="1" list="rangevalues"></label>
-            <datalist id="rangevalues">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </datalist>
+            <fieldset>
+                <legend>Simple Form</legend>
+                <label class="top">Username* <input type="text" id="username" name="username" required></label>
+                <label class="top">Password* <input type="password" id="password" name="password" required
+                        pattern="[a-zA-Z0-9]{8,}"
+                        title="Password must be at least eight (8) characters long and can only be alpha-numeric"></label>
+                <label class="top">Confirm Password* <input type="password" id="passwordr" name="passwordr" required
+                        pattern="[a-zA-Z0-9]{8,}"></label>
+                <label class="top">Email* <input type="email" id="email" name="email" required
+                        pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
+                <label class="rating">
+                    <p id="prating">Page Rating</p>
+                    <div id="rangevalue">1</div><input type="range" id="rating" name="rating" min="1" max="10" value="1"
+                        step="1" list="rangevalues">
+                </label>
+
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </fieldset>
 
             <input type="submit" value="Sign Up" class="submitBtn">
 

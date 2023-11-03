@@ -1,3 +1,11 @@
+:root {
+    --fieldset: #445ba9;
+    --required: red;
+    --valid: green;
+    --input: #9c2c13;
+}
+
+
 header {
     display: grid;
     margin: 60px;
@@ -47,6 +55,9 @@ nav a {
     text-decoration: none;
 }
 
+.active {
+    color: yellow;
+}
 
 
 
@@ -54,14 +65,15 @@ nav a {
 /*----------- FORM --------------*/
 
 form fieldset {
-    margin: 2rem 0;
-    border: 1px solid #445ba9;
+    margin: 2rem 4rem;
+    border: 1px solid var(--fieldset);
+
     border-radius: 10px;
     padding: .5rem 2%;
 }
 
 form legend {
-    color: #445ba9;
+    color: var(--fieldset);
     margin: 0 1rem;
     padding: 0 .5rem;
 }
@@ -70,7 +82,7 @@ form label.top,
 form div {
     display: block;
     padding-top: 1rem;
-    color: #9c2c13;
+    color: var(--input);
     font-size: .8rem;
 }
 
@@ -89,29 +101,25 @@ form label.top select {
 
 }
 
-form label.sbs {
-    display: block;
-    padding: .75rem 0;
-    color: #555;
-}
-
 form input.submitBtn {
     border: none;
-    background-color: #9c2c13;
+    background-color: var(--input);
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
-    margin: 0 0 2rem 2%;
-    width: 96%;
+    /* margin: 0 0 2rem 2%; */
+    width: 100%;
     max-width: 20rem;
+    margin-left: 100px;
+    margin-top: -10px;
 }
 
 form label.top input:required {
-    border-left: red solid 6px;
+    border-left: var(--required) solid 6px;
 }
 
 form label.top input:required:valid {
-    border-left: green solid 6px;
+    border-left: var(--valid) solid 6px;
 }
 
 
@@ -121,18 +129,33 @@ form label.top input:required:valid {
     grid-column: 1 / 4;
     text-align: center;
     color: black;
-    margin-top: 53.5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    line-height: 60px;
 }
 
+#prating {
+    margin-top: 20px;
+    margin-bottom: -16px;
+}
 
-#r {
+#rating {
     width: 180px;
     margin-bottom: 0;
+    /* margin-top: 200px; */
+}
+
+#rangevalue {
+    font-size: 2rem;
+    color: navy;
+    /* margin-top: 20px; */
 }
 
 #rangevalues {
     display: flex;
-    margin: 0 0 0 25px;
+    margin: 0 0 0 0;
     width: 200px;
 }
 
