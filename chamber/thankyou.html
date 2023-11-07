@@ -34,10 +34,10 @@
         <button id="menu" title="Menu"></button>
         <nav class="navigation">
             <ul>
-                <li><a href="#" class="active">| Home |</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
+                <li><a href="#" class="active">| Join |</a></li>
             </ul>
         </nav>
 
@@ -56,45 +56,8 @@
 
     <main>
 
-
-        <div id="formmessage"></div>
-        <form method="get" action="record.html">
-
-            <fieldset>
-                <legend>New Member Registration</legend>
-                <label class="top">Username* <input type="text" id="username" name="username" required></label>
-                <label class="top">Password* <input type="password" id="password" name="password" required
-                        pattern="[a-zA-Z0-9]{8,}"
-                        title="Password must be at least eight (8) characters long and can only be alpha-numeric"></label>
-                <label class="top">Confirm Password* <input type="password" id="passwordr" name="passwordr" required
-                        pattern="[a-zA-Z0-9]{8,}"></label>
-                <label class="top">Email* <input type="email" id="email" name="email" required
-                        pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
-                <label class="rating">
-                    <span id="prating"><br>Page Rating<br></span>
-                    <span id="rangevalue">1<br></span>
-                    <input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1"
-                        list="rangevalues">
-                </label>
-
-                <datalist id="rangevalues">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </datalist>
-            </fieldset>
-
-            <input type="submit" value="Sign me up!" class="submitBtn">
-
-        </form>
-
+        <h1 id="h1form">Welcome aboard to Corregidora Chamber of Commerce.<br>We thank you for your preference, it will
+            be great working with you!</h1>
 
     </main>
 
@@ -117,7 +80,6 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/darkmode.js"></script>
-    <script src="scripts/windchill.js"></script>
 
 </body>
 

@@ -34,10 +34,10 @@
         <button id="menu" title="Menu"></button>
         <nav class="navigation">
             <ul>
-                <li><a href="#" class="active">| Home |</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
+                <li><a href="#" class="active">| Join |</a></li>
             </ul>
         </nav>
 
@@ -59,7 +59,7 @@
 
 
         <div id="joinnow">
-            <h2>Join Corregidora Chamber of Commerce now!</h2>
+            <h2>Become a member</h2>
         </div>
 
         <form method="get" action="thankyou.html">
@@ -69,7 +69,7 @@
                 <label class="top">First name* <input type="text" id="firstname" name="firstname" required></label>
                 <label class="top">Last name* <input type="text" id="lastname" name="lastname" required></label>
                 <label class="top">Title or position <input type="text" id="position" name="position"
-                        pattern="[a-zA-Z\s\-]{7,}"></label>
+                        pattern="[A-Za-z\s-]{7,}"></label>
                 <label class="top">Email* <input type="email" id="email" name="email" required
                         placeholder="someone@example.com"></label>
                 <label class="top">Mobile* <input type="tel" id="mobile" name="mobile" required></label>
@@ -82,8 +82,7 @@
                 <legend>Select your membership</legend>
 
                 <div class="membership">
-                    <h3>Membership level</h3>
-                    <p>Click one to see info...</p>
+                    <h3 id="memlevel">Membership level<br><br></h3>
                     <label class="level"><input type="radio" name="membership" value="np"
                             onclick="showMembershipInfo('np')">
                         NP Membership</label>
@@ -95,16 +94,17 @@
                             onclick="showMembershipInfo('gold')"> Gold Membership</label>
                 </div>
 
-                <div class="membership-info"></div>
+                <div class="membership-details"></div>
 
-                <label class="top">Business/Organization's description<textarea id="description" name="description"
-                        cols="30" rows="7"></textarea></label>
+                <label class="top">Business/Organization's description<br><textarea id="description" name="description"
+                        cols="70" rows="5"></textarea></label>
 
-                <label class="top">Timestamp <input type="hidden" id="timestamp" name="timestamp"></label>
+                <input type="hidden" id="timestamp" name="timestamp">
 
             </fieldset>
 
-            <input type="submit" value="Join now" class="submitBtn">
+            <input type="submit" value="Join now!" class="submitBtn" onclick="getHiddenDate()" name="submitButton">
+
 
         </form>
 
@@ -130,7 +130,7 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/darkmode.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/join.js"></script>
 
 </body>
 

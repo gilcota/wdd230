@@ -745,17 +745,23 @@
         background-color: #e1e8f2;
     }
 
-    form input.submitBtn {
+    .submitBtn {
         border: none;
-        background-color: var(--input);
-        color: white;
+        background-color: #48B5E8;
+        color: black;
+        font-weight: bolder;
+        font-size: 22px;
         border-radius: 1rem;
         padding: .75rem 1.5rem;
-        /* margin: 0 0 2rem 2%; */
+        margin: 0 0 2rem 2%;
         width: 100%;
-        max-width: 22rem;
-        margin-left: 40px;
-        margin-top: -10px;
+        max-width: 15rem;
+        /* margin-left: 300px; */
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin: 0 50%;
+        position: relative;
+        left: -130px;
     }
 
     form label.top input:required {
@@ -763,7 +769,7 @@
     }
 
     form label.top input:required:valid {
-        border-left: var(--valid) solid 6px;
+        border-bottom: var(--valid) solid 6px;
     }
 
 
@@ -814,15 +820,31 @@
         text-align: center;
     }
 
-    #membership {
+    .membership {
         display: inline-block;
     }
 
-    #level {
+    .level {
         display: block;
         padding: 0.75rem 0;
         font-size: 1rem;
     }
 
+    #memlevel {
+        color: black;
+    }
+
+    .membership-details {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 40px;
+        padding-left: 50px;
+        width: 500px;
+        line-height: 1.5rem;
+    }
+
+    .membership-details ul {
+        list-style-type: circle;
+    }
 
 }
