@@ -3,21 +3,25 @@ function msg() { console.log("asd") };
 function showMembershipInfo(membership) {
     const membershipDiv = document.querySelector(".membership-details");
     var info = "";
-    switch (membership) {
-        case "np":
-            info =
-                `
+    var x = window.matchMedia("(min-width: 500px)")
+
+    if (x.matches) {
+
+        switch (membership) {
+            case "np":
+                info =
+                    `
         <ul>
         <li>Total Annual Price: &nbsp<b>$0 USD</b></li>
         <li>4 Vouchers for in-person member networking events</li>
         <li>Invitations to member networking and business events</li>
         </ul>
         `
-            break;
+                break;
 
-        case "bronze":
-            info =
-                `
+            case "bronze":
+                info =
+                    `
         <ul>
         <li>Total Annual Price: &nbsp<b>$500 USD</b></li>
         <li>6 Vouchers for in-person member networking events</li>
@@ -26,11 +30,11 @@ function showMembershipInfo(membership) {
         <li>Eligible to serve on our Business Committees and Councils</li>
         </ul>
         `
-            break;
+                break;
 
-        case "silver":
-            info =
-                `
+            case "silver":
+                info =
+                    `
         <ul>
         <li>Total Annual Price: &nbsp<b>$750 USD</b></li>
         <li>10 Vouchers for in-person member networking events</li>
@@ -40,11 +44,11 @@ function showMembershipInfo(membership) {
         <li>Eligible to lead a Business Committee or Council</li>
         </ul>
         `
-            break;
+                break;
 
-        case "gold":
-            info =
-                `
+            case "gold":
+                info =
+                    `
         <ul>
         <li>Total Annual Price: &nbsp<b>$1,000 USD</b></li>
         <li>15 Vouchers for in-person member networking events</li>
@@ -56,10 +60,12 @@ function showMembershipInfo(membership) {
         <li>One-on-One meeting with Chamber CEO</li>
         </ul>
         `
-            break;
+                break;
+        }
     }
     membershipDiv.innerHTML = info;
 }
+
 
 /* GET LOCAL DAY */
 function getHiddenDate() {
