@@ -28,6 +28,7 @@ const displayLinks = (lessons) => {
                 linkElement.href = baseURL + link.url;
             }
 
+            linkElement.target = "_blank"
             linkElement.textContent = link.title;
             listItem.appendChild(linkElement);
 
