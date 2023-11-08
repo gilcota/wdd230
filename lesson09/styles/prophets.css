@@ -1,7 +1,7 @@
 main section {
     background-color: #B9B9CC;
     margin: .5rem;
-    padding: 1rem;
+    padding: .5rem;
     box-shadow: 1px 1px 5px 1px black;
 
 }
@@ -33,13 +33,14 @@ h1 {
 
 h2 {
     color: #56569A;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bolder;
+    margin-top: 0px;
     margin-bottom: -10px;
 }
 
 p {
-    font-size: 25px;
+    font-size: 21px;
     height: 10px;
 }
 
