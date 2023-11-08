@@ -1,0 +1,50 @@
+main section {
+    background-color: #B9B9CC;
+    margin: .5rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 5px 1px black;
+
+}
+
+body {
+    text-align: center;
+}
+
+main img {
+    box-shadow: 0 0 30px #777;
+    margin-top: 10px;
+}
+
+main div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding: .3srem;
+    border: 1px solid #bbb;
+    background-color: #DDDDDD;
+}
+
+h1 {
+    color: #56569A;
+    font-size: 45px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #56569A;
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: -10px;
+}
+
+p {
+    font-size: 25px;
+    height: 10px;
+}
+
+footer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
