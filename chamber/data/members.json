@@ -1,15 +1,74 @@
 {
     "members": [
         {
-            "name": "Joseph",
-            "address": "Smith",
-            "phonenumber": "23 December 1805",
-            "websiteurl": "https://assets.churchofjesuschrist.org/ec/f8/ecf80a88e31429d0aa0eeec6e2c74851a4bf4235/nauvoo_temple_joseph_art_lds.jpeg",
-            "logo": "Vermont",
-            "level": 1,
-            "contactname": "Mahonri",
-            "contactlastname": "Gil",
-            "contactposition": "Operations Manager"
+            "name": "Box 2 Box Storage",
+            "address": "Carr. Querétaro-Tequisquiapan 349, Qro., Qro.",
+            "phonenumber": "+52 55-8037-4700",
+            "websiteurl": "https://www.box2boxstorage.com/mx/warehouses/queretaro",
+            "logo": "/images/logos/b2b-logo.webp",
+            "level": "Bronze",
+            "contactname": "Carlos",
+            "contactlastname": "Romo"
         },
+        {
+            "name": "MexiMaq Machines",
+            "address": "Carr. Libre a Celaya Km 7.9 Int. 5, Corregidora, Qro.",
+            "phonenumber": "+52 442-628-4000",
+            "websiteurl": "https://www.meximaq.com/",
+            "logo": "/images/logos/meximaq-logo.webp",
+            "level": "Silver",
+            "contactname": "Luis",
+            "contactlastname": "Molina"
+        },
+        {
+            "name": "Transpormer Trucks",
+            "address": "Av. 5 de Febrero #1254/D, Qro., Qro.",
+            "phonenumber": "+52 442-454-0274",
+            "websiteurl": "https://www.transpormer.mx/",
+            "logo": "/images/logos/transpormer-logo.webp",
+            "level": "Silver",
+            "contactname": "Víctor",
+            "contactlastname": "Martínez"
+        },
+        {
+            "name": "Tetra Pak",
+            "address": "Carr. Libre a Celaya Km 9.5, Corregidora, Qro.",
+            "phonenumber": "+52 442-211-2000",
+            "websiteurl": "https://www.tetrapak.com/es-mx/contact-us",
+            "logo": "/images/logos/tetra-pak-logo.webp",
+            "level": "Gold",
+            "contactname": "José",
+            "contactlastname": "Sánchez"
+        },
+        {
+            "name": "Goncap",
+            "address": "Av. Paseo Constituyentes 1725, Corregidora, Qro.",
+            "phonenumber": "+52 442-277-4275",
+            "websiteurl": "https://goncap.com/",
+            "logo": "/images/logos/goncap-logo.webp",
+            "level": "Bronze",
+            "contactname": "Jaime",
+            "contactlastname": "Salas"
+        },
+        {
+            "name": "Lactel",
+            "address": "Av. Cuauhtémoc 262, Corregidora, Qro.",
+            "phonenumber": "+52 442-225-0478",
+            "websiteurl": "https://lactel.com.my/",
+            "logo": "/images/logos/lactel-logo.webp",
+            "level": "Silver",
+            "contactname": "Damián",
+            "contactlastname": "Rodríguez"
+        },
+        {
+            "name": "HITO",
+            "address": "Anillo Vial Fray Junípero Serra 1999, Qro., Qro.",
+            "phonenumber": "+52 442-235-5700",
+            "websiteurl": "https://hito.org.mx/",
+            "logo": "/images/logos/hito-logo.webp",
+            "level": "NP",
+            "contactname": "Nicole",
+            "contactlastname": "Gil"
+        }
     ]
 }

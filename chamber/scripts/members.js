@@ -1,18 +1,18 @@
-const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
-const baseURL = "https://gilcota.github.io/wdd230/";
+const url = "https://gilcota.github.io/wdd230/chamber/data/members.json";
+const baseURL = "https://gilcota.github.io/wdd230/chamber/";
 const cards = document.querySelector('#cards');
 
-async function getProphetData() {
+async function getMemberData() {
     const response = await fetch(url);
     const data = await response.json();
-    //console.table(data.prophets);
-    displayProphets(data.prophets); // note that we reference the prophets array of the JSON data object, not just the object
+    //console.table(data.members);
+    displayMembers(data.members); // note that we reference the members array of the JSON data object, not just the object
 }
 
-getProphetData();
+getMemberData();
 
-const displayProphets = (prophets) => {
-    prophets.forEach((prophet) => {
+const displayMembers = (members) => {
+    members.forEach((member) => {
         // Create elements to add to the div.cards element
         let card = document.createElement('section');
         let fullName = document.createElement('h2'); // fill in the blank
@@ -21,15 +21,15 @@ const displayProphets = (prophets) => {
         let portrait = document.createElement('img');
 
 
-        // Build the h2 content out to show the prophet's full name
-        fullName.textContent = `${prophet.name} ${prophet.lastname}`; // fill in the blank
+        // Build the h2 content out to show the member's full name
+        fullName.textContent = `${member.name} ${member.lastname}`; // fill in the blank
 
-        dateBirth.textContent = `Date of birth: ${prophet.birthdate}`
-        placeBirth.textContent = `Place of birth: ${prophet.birthplace}`
+        dateBirth.textContent = `Date of birth: ${member.birthdate}`
+        placeBirth.textContent = `Place of birth: ${member.birthplace}`
 
         // Build the image portrait by setting all the relevant attributes
-        portrait.setAttribute('src', prophet.imageurl);
-        portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`); // fill in the blank
+        portrait.setAttribute('src', member.imageurl);
+        portrait.setAttribute('alt', `Portrait of ${member.name} ${member.lastname}`); // fill in the blank
         portrait.setAttribute('loading', 'lazy');
         portrait.setAttribute('width', '280');
         portrait.setAttribute('height', '362');
