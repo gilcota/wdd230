@@ -1,6 +1,6 @@
 const url = "https://gilcota.github.io/wdd230/chamber/data/members.json";
 const baseURL = "https://gilcota.github.io/wdd230/chamber/";
-const cards = document.querySelector('#cards');
+const grid = document.querySelector('.grid');
 
 async function getMemberData() {
     const response = await fetch(url);
@@ -19,6 +19,8 @@ const displayMembers = (members) => {
         let address = document.createElement('p');
         let phonenumber = document.createElement('p');
         const site = document.createElement('a');
+        let memberlevel = document.createElement('p');
+        let companycontact = document.createElement('p');
 
 
 
@@ -27,6 +29,8 @@ const displayMembers = (members) => {
         phonenumber.textContent = `${member.phonenumber}`;
         site.textContent = `${member.websiteurl}`;
         site.setAttribute('href', member.websiteurl);
+        memberlevel.textContent = `${member.level} Member`;
+        companycontact.textContent = `Contact: ${member.contactname} ${member.contactlastname}`;
 
         // Build the image logo by setting all the relevant attributes
         logo.setAttribute('src', baseURL + member.logo);
@@ -35,12 +39,37 @@ const displayMembers = (members) => {
 
         // Append the section(card) with the created elements
         card.appendChild(logo); //fill in the blank
+        card.appendChild(memberlevel);
         card.appendChild(address);
         card.appendChild(phonenumber);
+        card.appendChild(companycontact);
         card.appendChild(site);
 
 
 
-        cards.appendChild(card);
+
+
+        grid.appendChild(card);
     }); // end of arrow function and forEach loop
+}
+
+
+//------------LAYOUT VIEW SELECTION SECTION---------------//
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
+
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
+gridbutton.addEventListener("click", () => {
+    // example using arrow function
+    display.classList.add("grid");
+    display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+    display.classList.add("list");
+    display.classList.remove("grid");
 }
