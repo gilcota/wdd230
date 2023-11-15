@@ -167,112 +167,128 @@
 
     /*START OF DIRECTORY.HTML PAGE - Layout view selection*/
 
-    * {
+    /* * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    }
+    } */
 
-    main {
-        margin: 0 auto;
+    #maindir {
+        margin: 20px auto;
         padding: 0.5rem;
         max-width: 1100px;
         background-color: #fff;
-        font-family: Roboto, Helvetica, sans-serif;
+
     }
 
     .menuv {
         margin: 1rem auto;
-        border: 1px solid rgba(0, 0, 0, 0.1);
+        /* border: 1px solid rgba(0, 0, 0, 0.1);
         padding: 0.5rem;
-        background-color: #bed;
+        background-color: #57739960; */
         text-align: center;
+
+        width: 120px;
     }
 
     .menuv button {
-        padding: 1rem;
-        font-weight: 700;
+        padding: .1rem;
+        font-weight: 500;
     }
 
 
-    section {
+    .sectiondir {
         border: 1px solid rgba(0, 0, 0, 0.1);
         padding: 0.5rem;
         background-color: #eee;
     }
 
+    #dirh {
+        text-align: center;
+        margin-bottom: -5px;
+        margin-top: 10px;
+        font-size: 24px;
+
+    }
+
     .grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-gap: 5px;
+        grid-gap: 10px;
         align-items: center;
     }
 
-    .grid section {
+    .grid .sectiondir {
         text-align: center;
     }
+
+    .grid .compname {
+        display: none;
+    }
+
 
     .grid img {
         border: 1px solid #fff;
         box-shadow: 0 0 10px #333;
     }
 
-    .grid section>* {
+    .grid .sectiondir>* {
         margin: 0.1rem;
     }
 
-    .grid h3 {
-        font-family: "Caveat", cursive;
-    }
 
     .list {
         display: flex;
         flex-direction: column;
+        margin-left: 100px;
+        margin-right: 100px;
+        font-size: 15px;
     }
 
-    .list section {
+    .list .sectiondir {
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr 1.5fr;
+        margin: 1px;
+        padding: 0.5rem;
+    }
+
+    .list .sectiondir>* {
         margin: 0;
-        padding: 0.25rem;
+        text-align: left;
     }
 
-    .list section>* {
-        margin: 0 1rem;
-    }
-
-    .list section img {
+    .list .sectiondir img,
+    .list .mlevel,
+    .list .ccontact {
         display: none;
         /* smaller viewports only */
     }
 
-    .list section h3 {
+    .list .sectiondir h3 {
         font-size: 1rem;
-        font-family: Roboto, Helvetica, sans-serif;
     }
 
-    .list section:nth-child(even) {
-        background-color: #bed;
+    .list .sectiondir:nth-child(even) {
+        background-color: #57739960;
     }
 
-    section h3 {
+
+    .sectiondir h3 {
         font-size: 1.5rem;
     }
 
-    section p {
-        font-weight: 600;
+    .sectiondir p {
+        /* font-weight: 600; */
         font-size: smaller;
     }
 
-    section a {
-        font-family: "Roboto", Arial, sans-serif;
+    .sectiondir a {
         font-size: 0.7rem;
-        color: navy;
         letter-spacing: 1.1pt;
     }
 
-    img {
-        height: 75px;
+    .imgdir {
+        height: 40px;
         max-width: 100%;
     }
 

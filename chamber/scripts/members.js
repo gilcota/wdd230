@@ -21,6 +21,7 @@ const displayMembers = (members) => {
         const site = document.createElement('a');
         let memberlevel = document.createElement('p');
         let companycontact = document.createElement('p');
+        let name = document.createElement('p');
 
 
 
@@ -31,14 +32,23 @@ const displayMembers = (members) => {
         site.setAttribute('href', member.websiteurl);
         memberlevel.textContent = `${member.level} Member`;
         companycontact.textContent = `Contact: ${member.contactname} ${member.contactlastname}`;
+        name.textContent = `${member.name}`
 
         // Build the image logo by setting all the relevant attributes
         logo.setAttribute('src', baseURL + member.logo);
         logo.setAttribute('alt', `Logo of ${member.name}`); // fill in the blank
         logo.setAttribute('loading', 'lazy');
 
+        card.setAttribute('class', "sectiondir")
+        logo.setAttribute('class', "imgdir")
+        site.setAttribute('target', "_blank")
+        name.setAttribute('class', "compname")
+        memberlevel.setAttribute('class', "mlevel")
+        companycontact.setAttribute('class', "ccontact")
+
         // Append the section(card) with the created elements
         card.appendChild(logo); //fill in the blank
+        card.appendChild(name);
         card.appendChild(memberlevel);
         card.appendChild(address);
         card.appendChild(phonenumber);
