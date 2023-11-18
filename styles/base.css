@@ -159,7 +159,7 @@ h3 {
 
 figure,
 #current-temp,
-figcaption {
+#figcaption {
     grid-row: 2;
     margin: 0px;
     font-size: 20px;
