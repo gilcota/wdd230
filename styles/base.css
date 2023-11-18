@@ -141,8 +141,8 @@ h3 {
 
 #weather-div {
     display: grid;
-    grid-template-rows: 3;
-    grid-template-columns: 3;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 #city {
@@ -171,6 +171,7 @@ figure,
     align-content: center;
     text-align: center;
     text-transform: capitalize;
+    padding: 0px;
 }
 
 #visits {
