@@ -90,10 +90,20 @@
             <h3>
                 Information
             </h3>
-            <p>Querétaro, México
-                <br>80 °F - Sunshine
-                <br>Page Visits: <span class="visits"></span>
-            </p>
+
+            <div id="weather-div">
+                <p id="city">Querétaro, México</p>
+                <figure><img id="weather-icon" src="" alt=""></figure>
+                <span id="current-temp"></span>
+                <figcaption></figcaption>
+
+                <p id="visits">
+                    Page Visits: <span class="visits"></span>
+                </p>
+
+            </div>
+
+
         </section>
     </main>
 
@@ -116,6 +126,7 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/links.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>

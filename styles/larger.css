@@ -147,6 +147,53 @@
         color: black;
     }
 
+
+
+    /* weather info */
+
+    #weather-div {
+        display: grid;
+        grid-template-rows: 3;
+        grid-template-columns: 3;
+    }
+
+    #city {
+        grid-row: 1;
+        grid-column: 1 / 4;
+        margin: 0px;
+        margin-top: 60px;
+    }
+
+    #weather-icon {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    figure,
+    #current-temp,
+    figcaption {
+        grid-row: 2;
+        margin: 0px;
+        font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+        /* display: flex; */
+        float: left;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+
+    #visits {
+        grid-row: 3;
+        grid-column: 1 / 4;
+        margin: 0px;
+    }
+
+    /* weather info end */
+
     section ul {
         list-style: none;
         font-family: 'Raleway', sans-serif;
