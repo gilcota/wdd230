@@ -39,18 +39,9 @@ function displayResults(data) {
 apiFetch()
 
 
-
-
-
-// const currentTempW = currentTemp.innerText('#current-temp');
-
-// console.log(currentTempW);
-
 function windChillCalc(data) {
     const temperatureC = data.main.temp;
     const windspeedM = parseFloat(document.querySelector("#windspeed").textContent);
-
-
 
     console.log(temperatureC);
     console.log(windspeedM);
@@ -73,3 +64,47 @@ function windChillCalc(data) {
     document.querySelector("#windchill").textContent = windchill;
 
 }
+
+//Forecast start
+
+
+const urlForecast = "https://api.openweathermap.org/data/2.5/forecast?lat=20.55&lon=-100.44&units=metric&appid=d7ffb76f27d5f75f6ce4b7817252176f";
+
+fetch(urlForecast)
+    .then((response) => response.json())
+    .then((forecast) => {
+        for (const item in forecast.list) {
+            if (forecast.list[item].dt_txt.includes("18:00")) {
+                console.log(forecast.list[item]);
+                var date = new Date(forecast.list[item].dt_txt);
+                var day = date.toString();
+                day = day.slice(0, 10).replace(day[3], ', ')
+
+                let card = document.createElement('section');
+                let dd = document.createElement('p');
+                dd.textContent = day;
+                card.appendChild(dd);
+
+                let img = document.createElement('img')
+                const imagesrc = 'https://openweathermap.org/img/w/' + forecast.list[item].weather[0].icon + '.png';
+                img.setAttribute('src', imagesrc);
+                img.setAttribute('alt', forecast.list[item].weather[0].main);
+                card.appendChild(img);
+
+                let lineBreak = document.createElement('p');
+                card.appendChild(lineBreak);
+
+                let tt = document.createElement('span');
+                tt.textContent = forecast.list[item].main.temp.toFixed(1) + " °C";
+                card.appendChild(tt);
+
+                document.querySelector('section.forecast').appendChild(card);
+            }
+
+        }
+    });
+
+
+//Forecast end
+
+

@@ -463,7 +463,8 @@ p {
 
 
 
-.weather {
+.weather,
+.forecast {
     height: 120px;
     margin-top: 10px;
     align-self: center;
@@ -477,9 +478,13 @@ p {
     background-color: #F0F3F8;
 }
 
+.weather {
+    height: 80px;
+}
+
 #weather-icon {
     /* display: inline; */
-    height: 35px;
+    height: 50px;
 }
 
 
@@ -489,6 +494,41 @@ p {
     text-transform: capitalize;
 }
 
+
+.forecast {
+    color: #495867;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    background-color: #F0F3F8;
+    border: 1px solid gray;
+    /* width: 100%; */
+    height: 100px;
+    /* line-height: 50px; */
+    margin-top: 20px;
+    line-height: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.forecast p {
+    /* font-size: 1.7rem; */
+    /* grid-row: 1; */
+    color: #495867;
+    margin: 0px;
+    font-size: 15px;
+}
+
+.forecast img {
+    /* grid-row: 2; */
+    width: 60px;
+    /* margin-top: -15px; */
+}
+
+
+
 /* Weather json end */
 
 .weather-h3 {
@@ -496,6 +536,7 @@ p {
     margin: 0px;
     line-height: 40px;
     text-align: center;
+    font-weight: normal;
 }
 
 footer {
