@@ -1,3 +1,6 @@
+
+//PREVIOUS WINDCHILL CODE START
+
 const temperature = parseFloat(document.querySelector("#temperature").textContent)
 const windspeed = parseFloat(document.querySelector("#windspeed").textContent)
 
@@ -11,6 +14,11 @@ if (temperature <= 50 && windspeed > 3) {
 
 
 document.querySelector("#windchill").textContent = windchill;
+
+//PREVIOUS WINDCHILL CODE END
+
+
+
 
 
 

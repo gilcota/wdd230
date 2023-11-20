@@ -146,12 +146,21 @@
 
         <section class="weather">
             <h3 class="weather-h3">Weather&ensp;</h3>
-            <img id="weather-icon" src="images/weather-icon.webp" alt="Icon of the actual weather, partly cloudy">
-            <h3 class="weather-h3">&ensp;<span id=temperature>48</span> °F&ensp;-&ensp;Partly
-                Cloudy&ensp;|&ensp;Humidity:
-                xx&ensp;|&ensp;Wind Speed: <span id=windspeed>8</span> mph&ensp;|&ensp;WindChill: <span id=windchill>
+            <img id="weather-icon" src="#" alt="Thumbnail">
+            <h3 class="weather-h3">&ensp;<span id=current-temp></span> °C&ensp;-&ensp;<span
+                    id=figcaption></span>&ensp;|&ensp;Humidity:&ensp;<span id=humidity></span>
+                %&ensp;|&ensp;Wind Speed: <span id=windspeed></span> m/s&ensp;|&ensp;WindChill: <span id=windchill>
                 </span></h3>
         </section>
+
+        <!-- <section class="weather">
+            <h3 class="weather-h3">Weather&ensp;</h3>
+            <img id="weather-icon" src="images/weather-icon.webp" alt="Icon of the actual weather, partly cloudy">
+            <h3 class="weather-h3">&ensp;<span id=temperature>48</span> °F&ensp;-&ensp;Partly
+                Cloudy&ensp;|&ensp;Humidity: &ensp;<span id=humidity></span>
+                &ensp;|&ensp;Wind Speed: <span id=windspeed>8</span> mph&ensp;|&ensp;WindChill: <span id=windchill>
+                </span></h3>
+        </section> -->
 
     </main>
 
@@ -174,7 +183,9 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/darkmode.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <!-- <script src="scripts/windchill.js"></script> -->
+
 
 </body>
 

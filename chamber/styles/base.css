@@ -482,6 +482,15 @@ p {
     height: 35px;
 }
 
+
+/* Weather json start */
+
+#figcaption {
+    text-transform: capitalize;
+}
+
+/* Weather json end */
+
 .weather-h3 {
     padding-left: 5px;
     margin: 0px;

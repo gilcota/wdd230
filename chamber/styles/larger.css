@@ -549,6 +549,16 @@
         height: 35px;
     }
 
+
+    /* Weather json start */
+
+    #figcaption {
+        text-transform: capitalize;
+    }
+
+    /* Weather json end */
+
+
     footer {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
