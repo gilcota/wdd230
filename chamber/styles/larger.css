@@ -402,10 +402,14 @@
         height: 300px;
     }
 
-    #join {
+
+    #joina {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         place-self: center;
+    }
+
+    #join {
         width: 10em;
         color: #495867;
         background-color: #48B5E8;

@@ -403,11 +403,13 @@ h3 {
 }
 
 
-
-#join {
+#joina {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     place-self: center;
+}
+
+#join {
     width: 10em;
     color: #495867;
     background-color: #48B5E8;
