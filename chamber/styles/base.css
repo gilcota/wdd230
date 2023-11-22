@@ -229,6 +229,50 @@ header {
 /*END OF DIRECTORY.HTML PAGE - Layout view selection*/
 
 
+/*Invitation Banner START*/
+.invbanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 11px;
+
+    border: 1px solid gray;
+    color: white;
+    background-color: #48B5E8;
+
+    text-align: center;
+}
+
+#invitation {
+    text-align: center;
+    float: right;
+    margin: 0px;
+}
+
+/* Style the close button (span) */
+.close {
+    cursor: pointer;
+    padding: 5px 11px;
+    color: red;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.close:hover {
+    background: #bbb;
+}
+
+/* Invitation Banner END*/
+
+
+
 
 #logo {
     grid-column: 3 / 4;
@@ -537,6 +581,7 @@ p {
     line-height: 40px;
     text-align: center;
     font-weight: normal;
+    font-size: 15px;
 }
 
 footer {
