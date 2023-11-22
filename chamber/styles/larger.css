@@ -341,10 +341,7 @@
 
     /* Invitation Banner END*/
 
-
-
-
-    .herolabell {
+    /* .herolabell {
         display: block;
         position: absolute;
 
@@ -353,8 +350,6 @@
         margin-left: 60px;
         right: 0px;
         left: 0px;
-
-        /* height: 100px; */
 
         background: radial-gradient(#fff, #4D5B97);
         border: 1px solid rgba(0, 0, 0, .75);
@@ -370,15 +365,10 @@
         font-size: 50px;
     }
 
-
     .herolabelm,
     .herolabels {
         display: none;
-    }
-
-
-
-
+    } */
 
 
 
@@ -395,21 +385,22 @@
         */
 
 
-        /* display: grid;
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        background-color: #F0F3F8; */
+        background-color: #F0F3F8;
     }
 
-    #heroe-image {
-        /* grid-column: 1 / 4;
-        grid-row: 1 / 4; */
-        width: 100%;
-        height: 300px;
+    #heroe-images {
+        grid-column: 1 / 4;
+        grid-row: 1 / 4;
         border: 1px solid gray;
     }
 
-
+    #heroe-image {
+        width: 100%;
+        height: 300px;
+    }
 
     #join {
         grid-column: 1 / 2;
@@ -646,7 +637,7 @@
         background-color: #577399;
     }
 
-    #logo2 {
+    .logo2 {
         grid-column: 2 / 3;
         grid-row: 1 / 4;
         width: 80px;
