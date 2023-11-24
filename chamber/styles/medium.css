@@ -89,7 +89,7 @@
         grid-column: 3 / 8;
         font-size: 20px;
         color: white;
-        margin-left: 10px;
+        margin-left: -20px;
         margin-top: 0px;
         margin-bottom: 0px;
     }
@@ -651,6 +651,7 @@
         grid-column: 2 / 3;
         width: 40px;
         height: 40px;
+        margin-left: 20px;
     }
 
 
@@ -701,7 +702,7 @@
         grid-column: 6 / 8;
         grid-row: 1 / 4;
         color: white;
-        margin-left: -20px;
+        /* margin-left: -20px; */
     }
 
 

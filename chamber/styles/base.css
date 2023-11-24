@@ -630,6 +630,7 @@ footer {
     color: white;
     justify-self: left;
     /* padding-left: 20px; */
+    margin-left: 0px;
 }
 
 .map {

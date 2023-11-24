@@ -21,7 +21,7 @@ let day = d.getDay();
 console.log(day);
 
 if (day == 4 | day == 5 | day == 6 | day == 7) {
-    console.log("Today is Mon-Wed")
+    console.log("Today is not Mon-Wed")
     invitationBanner.style.display = 'none';
 };
 
