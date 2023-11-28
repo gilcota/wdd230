@@ -550,7 +550,7 @@
         background-color: #F0F3F8;
         padding-left: 40px;
         padding-right: 40px;
-        /* padding-top: 40px; */
+        padding-top: 10px;
         padding-bottom: 0px;
         display: grid;
     }
@@ -566,6 +566,7 @@
     #spotlight2 a,
     #spotlight3 a {
         text-align: center;
+        font-size: 15px;
     }
 
     .spotlight-p {
@@ -586,7 +587,7 @@
     .forecast {
         display: grid;
         height: 40px;
-        margin-top: 60px;
+        margin-top: 30px;
         margin-left: 60px;
         margin-right: 60px;
         align-self: center;

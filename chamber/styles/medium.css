@@ -288,6 +288,7 @@
     .imgdir {
         height: 40px;
         max-width: 100%;
+        justify-self: center;
     }
 
     /*END OF DIRECTORY.HTML PAGE - Layout view selection*/
@@ -549,24 +550,26 @@
     #spotlight2,
     #spotlight3 {
         background-color: #F0F3F8;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 1px;
+        padding-right: 1px;
         /* padding-top: 28px; */
         padding-bottom: 0px;
-
+        padding-top: 0px;
+        display: grid;
     }
 
     #spotlight1 p,
     #spotlight2 p,
     #spotlight3 p {
-        margin-top: 3px;
-        margin-bottom: 3px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     #spotlight1 a,
     #spotlight2 a,
     #spotlight3 a {
         text-align: center;
+        font-size: 12px;
     }
 
     .spotlight-p {
@@ -599,6 +602,10 @@
         color: #495867;
         background-color: #F0F3F8;
 
+    }
+
+    .weather {
+        margin-top: -20px;
     }
 
     #weather-icon {
