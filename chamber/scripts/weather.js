@@ -14,9 +14,9 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data); // testing only
+            // console.log(data); // testing only
             displayResults(data); // uncomment when ready
-            windChillCalc(data);
+            // windChillCalc(data);
         } else {
             throw Error(await response.text());
         }
@@ -43,14 +43,14 @@ function windChillCalc(data) {
     const temperatureC = data.main.temp;
     const windspeedM = parseFloat(document.querySelector("#windspeed").textContent);
 
-    console.log(temperatureC);
-    console.log(windspeedM);
+    // console.log(temperatureC);
+    // console.log(windspeedM);
 
     const temperature = (temperatureC * 9 / 5) + 32;
-    console.log(temperature);
+    // console.log(temperature);
 
     const windspeed = windspeedM * 2.23694;
-    console.log(windspeed);
+    // console.log(windspeed);
 
     var windchill = "N/A";
 
@@ -60,7 +60,7 @@ function windChillCalc(data) {
         windchill = "N/A";
     }
 
-    console.log(windchill);
+    // console.log(windchill);
     document.querySelector("#windchill").textContent = windchill;
 
 }
@@ -75,7 +75,7 @@ fetch(urlForecast)
     .then((forecast) => {
         for (const item in forecast.list) {
             if (forecast.list[item].dt_txt.includes("18:00")) {
-                console.log(forecast.list[item]);
+                // console.log(forecast.list[item]);
                 var date = new Date(forecast.list[item].dt_txt);
                 var day = date.toString();
                 day = day.slice(0, 10).replace(day[3], ', ')

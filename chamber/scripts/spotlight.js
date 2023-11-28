@@ -24,7 +24,7 @@ function shuffle(array) {
 async function getSpotlights() {
     const response = await fetch(requestURL);
     const data = await response.json();
-    console.log(data.members)
+    // console.log(data.members)
 
     let goldBusinesses = [];
     data.members.forEach((business) => {

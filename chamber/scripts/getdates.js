@@ -18,7 +18,7 @@ hamButton.addEventListener('click', () => {
 const invitationBanner = document.querySelector(".invbanner")
 const d = new Date();
 let day = d.getDay();
-console.log(day);
+// console.log(day);
 
 if (day == 4 | day == 5 | day == 6 | day == 7) {
     console.log("Today is not Mon-Wed")
