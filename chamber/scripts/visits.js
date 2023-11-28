@@ -25,7 +25,7 @@ if (numVisits == 0) {
 } else if ((today - timeVisits) >= msToDays) {
     visitsDisplay.textContent = `You last visited ${((today - timeVisits) / msToDays).toFixed(0)} days ago.`;
 }
-console.log(today - timeVisits)
+
 // if (numVisits !== 0) AND  {
 //     visitsDisplay.textContent = numVisits;
 // } else {
