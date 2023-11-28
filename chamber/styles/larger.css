@@ -406,13 +406,6 @@
         height: 300px;
     }
 
-
-    #joina {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-        place-self: center;
-    }
-
     #join {
         width: 10em;
         color: #495867;
@@ -420,6 +413,9 @@
         border-radius: 25px;
         font-size: 25px;
         height: 50px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        place-self: center;
     }
 
     #events-image,
