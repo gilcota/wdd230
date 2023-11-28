@@ -413,6 +413,10 @@
         border-radius: 25px;
         font-size: 25px;
         height: 50px;
+
+    }
+
+    #joina {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         place-self: center;

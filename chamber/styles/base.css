@@ -411,6 +411,10 @@ h3 {
     font-size: 23px;
     height: 40px;
     /* opacity: 85%; */
+
+}
+
+#joina {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     place-self: center;

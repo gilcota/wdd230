@@ -414,6 +414,9 @@
         border-radius: 25px;
         font-size: 20px;
         height: 40px;
+    }
+
+    #joina {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         place-self: center;
