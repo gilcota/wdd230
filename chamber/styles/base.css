@@ -474,7 +474,7 @@ p {
     margin-right: 10px;
     /* margin-top: 10px; */
     margin-bottom: 10px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 40px;
     padding-right: 40px;
@@ -491,8 +491,18 @@ p {
 }
 
 
+#spotlight1 p,
+#spotlight2 p,
+#spotlight3 p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
 
-
+#spotlight1 a,
+#spotlight2 a,
+#spotlight3 a {
+    text-align: center;
+}
 
 .spotlight-p {
     text-align: right;

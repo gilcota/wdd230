@@ -551,9 +551,22 @@
         background-color: #F0F3F8;
         padding-left: 20px;
         padding-right: 20px;
-        padding-top: 28px;
+        /* padding-top: 28px; */
         padding-bottom: 0px;
 
+    }
+
+    #spotlight1 p,
+    #spotlight2 p,
+    #spotlight3 p {
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    #spotlight1 a,
+    #spotlight2 a,
+    #spotlight3 a {
+        text-align: center;
     }
 
     .spotlight-p {

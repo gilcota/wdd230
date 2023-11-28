@@ -294,6 +294,7 @@
     .imgdir {
         height: 40px;
         max-width: 100%;
+        justify-self: center;
     }
 
     /*END OF DIRECTORY.HTML PAGE - Layout view selection*/
@@ -549,9 +550,22 @@
         background-color: #F0F3F8;
         padding-left: 40px;
         padding-right: 40px;
-        padding-top: 40px;
+        /* padding-top: 40px; */
         padding-bottom: 0px;
+        display: grid;
+    }
 
+    #spotlight1 p,
+    #spotlight2 p,
+    #spotlight3 p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    #spotlight1 a,
+    #spotlight2 a,
+    #spotlight3 a {
+        text-align: center;
     }
 
     .spotlight-p {
