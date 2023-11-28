@@ -261,7 +261,6 @@ header {
 .close {
     cursor: pointer;
     padding: 5px 11px;
-    color: red;
     font-size: 20px;
     font-weight: bolder;
 }
