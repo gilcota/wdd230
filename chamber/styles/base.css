@@ -990,7 +990,7 @@ form label.top input:required:valid {
 
 /*----------- FORM  --------------*/
 
-#h1form {
+#h2form {
     grid-column: 1 / 4;
     text-align: center;
     color: var(--font-color);
