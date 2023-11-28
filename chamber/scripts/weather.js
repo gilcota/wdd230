@@ -16,7 +16,7 @@ async function apiFetch() {
             const data = await response.json();
             // console.log(data); // testing only
             displayResults(data); // uncomment when ready
-            // windChillCalc(data);
+            windChillCalc(data);
         } else {
             throw Error(await response.text());
         }
