@@ -94,6 +94,186 @@ header {
     justify-self: center;
 }
 
+
+
+/*START OF DIRECTORY.HTML PAGE - Layout view selection*/
+
+/* * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    } */
+
+#maindir {
+    margin: 20px auto;
+    padding: 0.5rem;
+    max-width: 1100px;
+    background-color: #fff;
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+
+.menuv {
+    margin: 1rem auto;
+    /* border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0.5rem;
+        background-color: #57739960; */
+    text-align: center;
+
+    width: 120px;
+}
+
+.menuv button {
+    padding: .1rem;
+    font-weight: 500;
+}
+
+
+.sectiondir {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #eee;
+}
+
+#dirh {
+    text-align: center;
+    margin-bottom: -5px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.grid {
+    display: grid;
+    /* grid-template-columns: repeat(2, minmax(200px, 1fr)); */
+    grid-gap: 10px;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.grid .sectiondir {
+    text-align: center;
+}
+
+.grid .compname {
+    display: none;
+}
+
+
+.grid img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #333;
+}
+
+.grid .sectiondir>* {
+    margin: 0.1rem;
+}
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 13px;
+}
+
+.list .sectiondir {
+    display: grid;
+    /* grid-template-columns: 1fr 2fr 1fr 1.5fr; */
+    margin: 1px;
+    padding: 0.5rem;
+}
+
+.list .sectiondir>* {
+    margin: 0;
+    text-align: left;
+}
+
+.list .sectiondir img,
+.list .mlevel,
+.list .ccontact {
+    display: none;
+    /* smaller viewports only */
+}
+
+.list .sectiondir h3 {
+    font-size: 1rem;
+}
+
+.list .sectiondir:nth-child(even) {
+    background-color: #57739960;
+}
+
+
+.sectiondir h3 {
+    font-size: 1.5rem;
+}
+
+.sectiondir p {
+    /* font-weight: 600; */
+    font-size: smaller;
+}
+
+.sectiondir a {
+    font-size: 0.6rem;
+    letter-spacing: 1.1pt;
+}
+
+.imgdir {
+    height: 40px;
+    max-width: 100%;
+    justify-self: center;
+}
+
+/*END OF DIRECTORY.HTML PAGE - Layout view selection*/
+
+
+/*Invitation Banner START*/
+.invbanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 11px;
+
+    border: 1px solid gray;
+    color: white;
+    background-color: #48B5E8;
+
+    text-align: center;
+}
+
+#invitation {
+    text-align: center;
+    float: right;
+    margin: 0px;
+}
+
+/* Style the close button (span) */
+.close {
+    cursor: pointer;
+    padding: 5px 11px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.close:hover {
+    background: #bbb;
+}
+
+/* Invitation Banner END*/
+
+
+
+
 #logo {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
@@ -204,26 +384,25 @@ h3 {
 
 
 
-    /* display: grid;
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    background-color: #F0F3F8; */
+    background-color: #F0F3F8;
+}
+
+#heroe-images {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    border: 1px solid gray;
 }
 
 #heroe-image {
-    /* grid-column: 1 / 2;
-    grid-row: 1 / 4; */
     width: 100%;
     height: 160px;
     border: 1px solid gray;
 }
 
-
-
 #join {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-    place-self: center;
     width: 10em;
     color: #495867;
     background-color: #48B5E8;
@@ -231,6 +410,13 @@ h3 {
     font-size: 23px;
     height: 40px;
     /* opacity: 85%; */
+
+}
+
+#joina {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    place-self: center;
 }
 
 .events {
@@ -268,11 +454,11 @@ p {
     margin-right: 15px;
 }
 
-.more-info {
+/* .more-info {
     text-decoration: none;
     font-size: 12px;
     color: #495867;
-}
+} */
 
 #member-title {
     text-align: center;
@@ -288,7 +474,7 @@ p {
     margin-right: 10px;
     /* margin-top: 10px; */
     margin-bottom: 10px;
-    padding-top: 20px;
+    padding-top: 5px;
     padding-bottom: 10px;
     padding-left: 40px;
     padding-right: 40px;
@@ -302,11 +488,22 @@ p {
     background-color: #F0F3F8;
 
     color: #495867;
+    display: grid;
 }
 
 
+#spotlight1 p,
+#spotlight2 p,
+#spotlight3 p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
 
-
+#spotlight1 a,
+#spotlight2 a,
+#spotlight3 a {
+    text-align: center;
+}
 
 .spotlight-p {
     text-align: right;
@@ -327,7 +524,8 @@ p {
 
 
 
-.weather {
+.weather,
+.forecast {
     height: 120px;
     margin-top: 10px;
     align-self: center;
@@ -341,16 +539,66 @@ p {
     background-color: #F0F3F8;
 }
 
+.weather {
+    height: 80px;
+}
+
 #weather-icon {
     /* display: inline; */
-    height: 35px;
+    height: 50px;
 }
+
+
+/* Weather json start */
+
+#figcaption {
+    text-transform: capitalize;
+}
+
+
+.forecast {
+    color: #495867;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    background-color: #F0F3F8;
+    border: 1px solid gray;
+    /* width: 100%; */
+    height: 100px;
+    /* line-height: 50px; */
+    margin-top: 20px;
+    line-height: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.forecast p {
+    /* font-size: 1.7rem; */
+    /* grid-row: 1; */
+    color: #495867;
+    margin: 0px;
+    font-size: 15px;
+}
+
+.forecast img {
+    /* grid-row: 2; */
+    width: 60px;
+    /* margin-top: -15px; */
+}
+
+
+
+/* Weather json end */
 
 .weather-h3 {
     padding-left: 5px;
     margin: 0px;
     line-height: 40px;
     text-align: center;
+    font-weight: normal;
+    font-size: 15px;
 }
 
 footer {
@@ -362,7 +610,7 @@ footer {
     background-color: #577399;
 }
 
-#logo2 {
+.logo2 {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
     width: 60px;
@@ -393,6 +641,7 @@ footer {
     color: white;
     justify-self: left;
     /* padding-left: 20px; */
+    margin-left: 0px;
 }
 
 .map {
@@ -740,7 +989,7 @@ form label.top input:required:valid {
 
 /*----------- FORM  --------------*/
 
-#h1form {
+#h2form {
     grid-column: 1 / 4;
     text-align: center;
     color: var(--font-color);

@@ -1,4 +1,5 @@
 const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
+const baseURL = "https://gilcota.github.io/wdd230/";
 const cards = document.querySelector('#cards');
 
 async function getProphetData() {

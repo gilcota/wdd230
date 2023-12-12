@@ -63,8 +63,9 @@
             <h3>
                 Activity and Assignment Links
             </h3>
-            <ul>
-                <li><b>01: </b><a href="lesson01/holygrail.html" target="_blank">Holy Layout</a> | <a
+            <ul id="lessonsList">
+
+                <!-- <li><b>01: </b><a href="lesson01/holygrail.html" target="_blank">Holy Layout</a> | <a
                         href="https://codepen.io/gilcota/pen/BavZwMp" target="_blank">JS Pen</a></li>
                 <li><b>02: </b><a href="lesson01/media-query.html" target="_blank">Media Query</a> | <a
                         href="lesson02/design-principles.html" target="_blank">Desing Principles Document</a></li>
@@ -80,18 +81,29 @@
                 <li><b>08: </b><a href="lesson08/tablebuild.html" target="_blank">Tables</a> | <a
                         href="lesson08/form-start/index.html" target="_blank">Forms</a></li>
                 <li><b>09: </b><a href="lesson05/new-ward-members.json" target="_blank">JSON</a> | <a
-                        href="lesson09/prophets.html" target="_blank">Fetch API</a></li>
-                <li><b>10: </b><a></a></li>
+                        href="lesson09/prophets.html" target="_blank">Fetch API - Prophets</a></li>
+                <li><b>10: </b><a></a></li> -->
+
             </ul>
         </section>
         <section class="card2">
             <h3>
                 Information
             </h3>
-            <p>Querétaro, México
-                <br>80 °F - Sunshine
-                <br>Page Visits: <span class="visits"></span>
-            </p>
+
+            <div id="weather-div">
+                <p id="city">Querétaro, México</p>
+                <figure><img id="weather-icon" src="#" alt="Thumbnail"></figure>
+                <span id="current-temp"></span>
+                <p id="figcaption"></p>
+
+                <p id="visits">
+                    Page Visits: <span class="visits"></span>
+                </p>
+
+            </div>
+
+
         </section>
     </main>
 
@@ -114,6 +126,7 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/links.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
