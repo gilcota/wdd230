@@ -7,7 +7,7 @@ const captionDesc = document.querySelector('#figcaption');
 const tempmax = document.querySelector('#temp-max');
 
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=20.42&lon=86.92&units=metric&appid=155931a8ab93edc39d34b1516aad0728';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=20.5083&lon=-86.9458&units=metric&appid=155931a8ab93edc39d34b1516aad0728';
 
 
 async function apiFetch() {
@@ -15,7 +15,7 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            // console.log(data); // testing only
+            console.log(data); // testing only
             displayResults(data); // uncomment when ready
             // windChillCalc(data);
         } else {
