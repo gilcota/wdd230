@@ -15,9 +15,9 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data); // testing only
+            // console.log(data); // testing only
             displayResults(data); // uncomment when ready
-            windChillCalc(data);
+            // windChillCalc(data);
         } else {
             throw Error(await response.text());
         }
@@ -71,6 +71,7 @@ apiFetch()
 
 
 const urlForecast = "https://api.openweathermap.org/data/2.5/forecast?lat=20.55&lon=-100.44&units=metric&appid=d7ffb76f27d5f75f6ce4b7817252176f";
+const process = NaN;
 
 fetch(urlForecast)
     .then((response) => response.json())
@@ -105,7 +106,7 @@ fetch(urlForecast)
                 card.appendChild(hu);
 
                 document.querySelector('section.forecast').appendChild(card);
-                return process.abort();
+                break;
             }
 
         }

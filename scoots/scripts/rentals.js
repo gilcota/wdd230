@@ -5,7 +5,7 @@ const cards = document.querySelector('#cards');
 async function getRentalsData() {
     const response = await fetch(urlr);
     const data = await response.json();
-    console.table(data.rentals);
+    // console.table(data.rentals);
     displayRentals(data.rentals); // note that we reference the prophets array of the JSON data object, not just the object
 }
 
