@@ -1,0 +1,52 @@
+{
+    "rentals": [
+        {
+            "type": "~Honda Metro Scooter",
+            "maxp": "1",
+            "rhday": "$20",
+            "rfday": "$30",
+            "whday": "$25",
+            "wfday": "$35"
+        },
+        {
+            "type": "~Honda Dio Scooter",
+            "maxp": "2",
+            "rhday": "$30",
+            "rfday": "$40",
+            "whday": "$35",
+            "wfday": "$45"
+        },
+        {
+            "type": "~Honda PCX150 Scooter",
+            "maxp": "2",
+            "rhday": "$40",
+            "rfday": "$50",
+            "whday": "$45",
+            "wfday": "$55"
+        },
+        {
+            "type": "Honda Pioneer ATV",
+            "maxp": "4",
+            "rhday": "$50",
+            "rfday": "$70",
+            "whday": "$60",
+            "wfday": "$80"
+        },
+        {
+            "type": "Jeep Wrangler - 4 door with a/c",
+            "maxp": "5",
+            "rhday": "$70",
+            "rfday": "$100",
+            "whday": "$85",
+            "wfday": "$125"
+        },
+        {
+            "type": "Jeep Wrangler - 2 door",
+            "maxp": "4",
+            "rhday": "$60",
+            "rfday": "$85",
+            "whday": "$70",
+            "wfday": "$90"
+        }
+    ]
+}

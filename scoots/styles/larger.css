@@ -29,6 +29,10 @@
         height: 75px;
     }
 
+    #titlel {
+        text-decoration: none;
+    }
+
     h1 {
         grid-column: 2 / 3;
         font-size: 20px;
@@ -87,6 +91,50 @@
     }
 
 
+    /*Invitation Banner START*/
+    .invbanner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+
+        height: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 8px;
+
+        border: 1px solid gray;
+        color: white;
+        background-color: #48B5E8;
+
+        text-align: center;
+
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #invitation {
+        text-align: center;
+        float: right;
+        margin: 0px;
+    }
+
+    /* Style the close button (span) */
+    .close {
+        cursor: pointer;
+        padding: 8px 8px;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .close:hover {
+        background: #bbb;
+    }
+
+    /* Invitation Banner END*/
+
 
     /* HERO IMAGE SECTION */
 
@@ -135,10 +183,130 @@
         place-self: center;
     }
 
+    /* IMAGES SECTION */
+
+    .banner-title {
+        text-align: center;
+    }
+
+    .banner-title-m {
+        margin-top: -80px;
+        text-align: center;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 250px;
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+
+    .imgc {
+        height: 200px;
+        width: 400px;
+    }
+
+    #c1 {
+        grid-column: 1 / 2;
+        max-width: 400px;
+        max-height: 200px;
+    }
+
+    #c2 {
+        grid-column: 2 / 3;
+        max-width: 400px;
+        max-height: 200px;
+    }
+
+    #c3 {
+        grid-column: 3 / 4;
+        max-width: 400px;
+        max-height: 200px;
+    }
+
+    h3 {
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .images p {
+        text-align: center;
+    }
 
 
 
+    /* WEATHER SECTION */
 
+    .weather-h3 {
+        margin-top: 0px;
+        padding: 0px;
+        margin: 0px;
+        font-size: 20px;
+    }
+
+    .weather,
+    .forecast {
+        display: grid;
+        height: 40px;
+        margin-top: 30px;
+        margin-left: 60px;
+        margin-right: 60px;
+        align-self: center;
+        border: 1px solid black;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: black;
+        background-color: white;
+
+    }
+
+    #weather-icon {
+        /* display: inline; */
+        height: 35px;
+    }
+
+    /* Weather json start */
+
+    .forecast {
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        width: 180px;
+        height: 100px;
+        /* line-height: 50px; */
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        line-height: 10px;
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .forecast p {
+        /* font-size: 1.7rem; */
+        /* grid-row: 1; */
+        color: black;
+        margin: 0px;
+        font-size: 20px;
+    }
+
+    .forecast img {
+        /* grid-row: 2; */
+        width: 60px;
+        /* margin-top: -15px; */
+    }
+
+
+    /* Weather json end */
 
 
 
@@ -147,33 +315,30 @@
     footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 200px 50px;
+        grid-template-rows: 150px 50px;
         align-items: center;
         background-color: #333333;
+    }
+
+    footer p {
+        color: white;
+        justify-self: center;
+        text-align: center;
     }
 
     #address {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
-        color: white;
-        justify-self: center;
-        text-align: center;
     }
 
     #contact {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
-        color: white;
-        justify-self: center;
-        text-align: center;
     }
 
     #hours {
         grid-column: 3 / 4;
         grid-row: 1 / 2;
-        color: white;
-        justify-self: center;
-        text-align: center;
     }
 
     .logo2 {

@@ -31,7 +31,9 @@
 
     <header>
         <a href="index.html" id="logoa"><img id="logo" src="images/scoots-logo.png" alt="Scoots Rentals Logo"></a>
-        <h1>Scoots Rentals</h1>
+        <a href="index.html" id="titlel">
+            <h1>Scoots Rentals</h1>
+        </a>
         <!-- <button id="menu" title="Menu"></button> -->
         <nav class="navigation">
             <ul>
@@ -54,23 +56,22 @@
 
         <!--Invitation Banner-->
 
-        <!-- <div class=invbanner>
-            You are welcome to attend to our meet and greet event on Wednesday at 7:00 p.m. !<span
-                class="close">❌</span>
-        </div> -->
+        <div class="invbanner">
+            Today's highest temperature in Cozumel is: <span id=temp-max></span> °C<span class="close">❌</span>
+        </div>
 
 
         <div class="heroe-box">
             <picture id="heroe-images">
                 <source srcset="images/images/cozumel-hero.jpg" media="(max-width: 500px)">
                 <source srcset="images/images/cozumel-hero.jpg" media="(max-width: 1000px)">
-                <img id="heroe-image" src="images/cozumel-hero.jpg" alt="Panoramic view of Cozumel beach in México"
-                    width="1320" height="300">
+                <img id="heroe-image" src="images/cozumel-hero.jpg" loading="lazy"
+                    alt="Panoramic view of Cozumel beach in México" width="1320" height="300">
             </picture>
 
             <label id="hero-banner">SCOOTS, ATVS & JEEPS <br>in Cozumel, México</br></label>
 
-            <form id="joina" style="display: inline" action="join.html" method="get">
+            <form id="joina" style="display: inline" action="reservations.html" method="get">
                 <button id="join" title="Make a Reservation">Make a <br>Rental Reservation</br></b>
                     <!-- <a id="joina" href="join.html"><b>Join the Chamber</b></a> -->
                 </button>
@@ -78,95 +79,100 @@
 
         </div>
 
+        <h2 class="banner-title"><b>Get to know us</b></h2>
+        <section class="images">
 
-        <section class="events">
-            <img id="events-image" src="images/events.webp" alt="Event on calendar image">
-            <h2 id="events-h2"><i>Events</i></h2>
-
-            <div id="event1">
-                <h3><i>Entrepreneur Week</i></h3>
-                <p><b>Professionalize your work and become the engine of economic and social change.
-                        <br><br><u>December 23rd - 27th</u>
-                        <!-- <br><a href="#" class="more-info" target="_blank">more info ...</a> -->
-                    </b>
-                </p>
+            <div id="c1">
+                <img class="imgc" src="images/jeeps-cozumel.jpeg" loading="lazy"
+                    alt="Jeeps caravan heading towards the beach">
+                <h3><i>Our Jeeps</i></h3>
             </div>
 
-            <div id="event2">
-                <h3><i>Annual Summit</i></h3>
-                <p><b>It is the most important event of our union which is held every year in a different delegation.
-                        <br><br><u>December 20th - 23rd</u>
-                        <!-- <br><a href="#" class="more-info" target="_blank">more info ...</a> -->
-                    </b>
-                </p>
+            <div id="c2">
+                <img class="imgc" src="images/rental-facilities.jpeg" loading="lazy" alt="Scoots rentals site">
+                <h3><i>Wide variety of vehicles</i></h3>
+            </div>
+
+            <div id="c3">
+                <img class="imgc" src="images/scooter-rental-2.jpg" loading="lazy" alt="Scooters for rental">
+                <h3><i>The size you need</i></h3>
             </div>
 
         </section>
 
-        <h3 id="member-title">Member Spotlights</h3>
 
-        <section class="spotlights">
+        <h2 class="banner-title"><b>Our available types of rentals</b></h2>
+        <section class="images">
 
-
-
-
-            <!-- <div id="spotlight1">
-                <h3>🏬 Box 2 Box Storage</h3>
-                <p class="spotlight-p"><b>"Your mini warehouse at home"</b></p>
-                <p class="spotlight-contact"><b>atencion@box2boxstorage.com<br>+52 55-8037-4700<br><a
-                            href="https://www.box2boxstorage.com/mx/warehouses/queretaro" class="spotlight-a"
-                            target="_blank">Website</a>
-                    </b>
-                </p>
+            <div id="c1">
+                <h3><i>Honda Motor Scooters</i></h3>
+                <p>🛵 Honda Metropolitan (49cc) - 1 person</p>
+                <p>🛵 Honda Dio (110cc) - 2 person</p>
+                <p>🛵 Honda PCX150 (149cc) - 2 person</p>
             </div>
 
-            <div id="spotlight2">
-                <h3>🏭 MexiMaq Machines</h3>
-                <p class="spotlight-p"><b>"Revolutionize your production line"</b></p>
-                <p class="spotlight-contact"><b>contacto@meximaq.com<br>+52 442-628-4000<br><a
-                            href="https://www.meximaq.com/" class="spotlight-a" target="_blank">Website</a>
-                    </b>
-                </p>
+            <div id="c2">
+                <h3><i>Side-by-Side ATVs</i></h3>
+                <p>🚙 Honda Pioneer 1000 - 4 person</p>
             </div>
 
-            <div id="spotlight3">
-                <h3>🚚 Transpormer Trucks</h3>
-                <p class="spotlight-p"><b>"Your cargo transportation solution"</b></p>
-                <p class="spotlight-contact"><b>v.martinez@transpormer.com<br>+52 442-454-0274<br><a
-                            href="https://www.transpormer.mx/" class="spotlight-a" target="_blank">Website</a>
-                    </b>
-                </p>
-            </div> -->
+            <div id="c3">
+                <h3><i>Jeeps</i></h3>
+                <p>🚙 Jeep Wrangler - 4 door manuel with A/C - 5p</p>
+                <p>🚙 Jeep Wrangler - 2 door - open air - manuel - 4p</p>
+            </div>
+
+        </section>
+
+
+        <h2 class="banner-title-m"><b>And enjoy plenty Cozumel Island</b></h2>
+        <section class="images">
+
+            <div id="c1">
+                <img class="imgc" src="images/cozumel-beach-adventure.jpg" loading="lazy" alt="Cozumel beach adventure">
+                <h3><i>Cozumel beach adventure</i></h3>
+            </div>
+
+            <div id="c2">
+                <img class="imgc" src="images/cozumel-diving.avif" loading="lazy" alt="Diving in Cozumel">
+                <h3><i>Cozumel Diving</i></h3>
+            </div>
+
+            <div id="c3">
+                <img class="imgc" src="images/cozumel-sunrise.jpg" loading="lazy" alt="Sun rising in Cozumel">
+                <h3><i>Cozumel Sunrise</i></h3>
+            </div>
 
         </section>
 
         <section class="weather">
-            <h3 class="weather-h3"><b>Today's Weather</b></h3>
-            <img id="weather-icon" src="#" alt="Weather Icon">
+            <h3 class="weather-h3"><b>Today's Weather: </b></h3>
+            <img id="weather-icon" src="#" loading="lazy" alt="Weather Icon">
             <h3 class="weather-h3">&ensp;<span id=current-temp></span> °C&ensp;-&ensp;<span
                     id=figcaption></span>&ensp;|&ensp;Humidity:&ensp;<span id=humidity></span>
-                %&ensp;|&ensp;Wind Speed: <span id=windspeed></span> m/s&ensp;|&ensp;WindChill: <span id=windchill>
-                </span></h3>
+                %&ensp;<span id=windspeed></span></h3>
         </section>
+
         <section class="forecast"></section>
+
     </main>
 
     <footer>
-        <p id="address"><em><b>Scoots Rentals</b><br><br> Prolongacion Av Rafael E Melgar
-                <br>Supermanzana SSA KM 3.5
-                <br>77675, Cozumel, México
-            </em></p>
-        <p id="contact"><em><b>Contact us</b><br>
-                <br>☎ Office: +52-998-887-2461
-                <br>📱 Mobile: +52-998-513-7258
-                <br>📧 E-mail: contact@scoots.com
-            </em></p>
-        <p id="hours"><em><b>Working Hours</b><br>
-                <br>Mon-Fri&emsp;: 8 AM - 9 PM
-                <br>Saturday : 7 AM - 10 PM
-                <br>Sunday&emsp;: 10 AM - 7 PM
-            </em></p>
-        <a class="logo2" href="index.html"><img class="logo2" src="images/scoots-logo.png"
+        <p id="address"><b>Scoots Rentals</b><br><br> Prolongacion Av Rafael E Melgar
+            <br>Supermanzana SSA KM 3.5
+            <br>77675, Cozumel, México
+        </p>
+        <p id="contact"><b>Contact us</b><br>
+            <br>☎ Office: +52-998-887-2461
+            <br>📱 Mobile: +52-998-513-7258
+            <br>📧 E-mail: contact@scoots.com
+        </p>
+        <p id="hours"><b>Working Hours</b><br>
+            <br>Mon-Fri&emsp;: 8 AM - 9 PM
+            <br>Saturday : 7 AM - 10 PM
+            <br>Sunday&emsp;: 10 AM - 7 PM
+        </p>
+        <a class="logo2" href="index.html"><img class="logo2" src="images/scoots-logo.png" loading="lazy"
                 alt="Scoots Rentals Logo"></a>
         <p id="author">
             &copy; <span id="currentYear"></span> Scoots Rentals
