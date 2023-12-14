@@ -15,8 +15,8 @@
     <meta property="og:url" content="https://gilcota.github.io/wdd230/scoots/">
 
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/portrait.css">
-    <link rel="stylesheet" href="styles/landscap.css">
+    <!-- <link rel="stylesheet" href="styles/portrait.css">
+    <link rel="stylesheet" href="styles/landscap.css"> -->
     <link rel="stylesheet" href="styles/larger.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,6 +52,121 @@
 
     <main>
 
+        <h2 class="banner-title"><b>Our Offer</b></h2>
+        <section class="images">
+
+            <div id="c1">
+                <img class="imgc" src="images/honda-metro.jpg" loading="lazy" alt="Honda Metro Scooter">
+                <h3><i>Honda Metro Scooter</i></h3>
+            </div>
+
+            <div id="c2">
+                <img class="imgc" src="images/honda-dio.jpg" loading="lazy" alt="Honda Dio Scooter">
+                <h3><i>Honda Dio Scooter</i></h3>
+            </div>
+
+            <div id="c3">
+                <img class="imgc" src="images/honda-pcx150.jpg" loading="lazy" alt="Honda PCX150 Scooter">
+                <h3><i>Honda PCX150 Scooter</i></h3>
+            </div>
+
+        </section>
+
+        <section class="images">
+
+            <div id="c1">
+                <img class="imgc" src="images/honda-pioneer.jpg" loading="lazy" alt="Honda Pioneer ATV">
+                <h3><i>Honda Pioneer ATV</i></h3>
+            </div>
+
+            <div id="c2">
+                <img class="imgc" src="images/jeep-w2.jpg" loading="lazy" alt="Jeep Wrangler - 2 door">
+                <h3><i>Jeep Wrangler - 2 door</i></h3>
+            </div>
+
+            <div id="c3">
+                <img class="imgc" src="images/jeep-w4.jpg" loading="lazy" alt="Jeep Wrangler - 4 door with a/c">
+                <h3><i>Jeep Wrangler - 4 door with a/c</i></h3>
+            </div>
+
+        </section>
+
+
+        <table>
+            <!-- <caption>Max Rental Pricing</caption> -->
+
+
+            <thead>
+                <tr>
+                    <th colspan="6" id="theader" scope="colgroup">Max Rental Pricing</th>
+                </tr>
+                <tr>
+                    <th colspan="2" scope="col" id="head-black"></th>
+                    <th colspan="2" scope="col">Reservation</th>
+                    <th colspan="2" scope="col">Walk-In</th>
+                </tr>
+                <tr>
+                    <th scope="col">Rental Type</th>
+                    <th scope="col">Max. Persons</th>
+                    <th scope="col">Half Day (3 hrs)</th>
+                    <th scope="col">Full Day</th>
+                    <th scope="col">Half Day (3 hrs)</th>
+                    <th scope="col">Full Day</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>~Honda Metro Scooter</td>
+                    <td id="maxp0"></td>
+                    <td id="rhday0"></td>
+                    <td id="rfday0"></td>
+                    <td id="whday0"></td>
+                    <td id="wfday0"></td>
+                </tr>
+                <tr>
+                    <td>~Honda Dio Scooter</td>
+                    <td id="maxp1"></td>
+                    <td id="rhday1"></td>
+                    <td id="rfday1"></td>
+                    <td id="whday1"></td>
+                    <td id="wfday1"></td>
+                </tr>
+                <tr>
+                    <td>~Honda PCX150 Scooter</td>
+                    <td id="maxp2"></td>
+                    <td id="rhday2"></td>
+                    <td id="rfday2"></td>
+                    <td id="whday2"></td>
+                    <td id="wfday2"></td>
+                </tr>
+                <tr>
+                    <td>Honda Pioneer ATV</td>
+                    <td id="maxp3"></td>
+                    <td id="rhday3"></td>
+                    <td id="rfday3"></td>
+                    <td id="whday3"></td>
+                    <td id="wfday3"></td>
+                </tr>
+                <tr>
+                    <td>Jeep Wrangler - 4 door with a/c</td>
+                    <td id="maxp4"></td>
+                    <td id="rhday4"></td>
+                    <td id="rfday4"></td>
+                    <td id="whday4"></td>
+                    <td id="wfday4"></td>
+                </tr>
+                <tr>
+                    <td>Jeep Wrangler - 2 door</td>
+                    <td id="maxp5"></td>
+                    <td id="rhday5"></td>
+                    <td id="rfday5"></td>
+                    <td id="whday5"></td>
+                    <td id="wfday5"></td>
+                </tr>
+            </tbody>
+        </table>
+
+
     </main>
 
     <footer>
@@ -83,7 +198,7 @@
     </footer>
     <script src="scripts/weather.js"></script>
     <script src="scripts/getdates.js"></script>
-    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/rentals.js"></script>
 
 </body>
 

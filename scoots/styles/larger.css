@@ -107,8 +107,7 @@
 
         border: 1px solid gray;
         color: white;
-        background-color: #48B5E8;
-
+        background-color: #FE663E;
         text-align: center;
 
         font-size: 20px;
@@ -308,6 +307,212 @@
 
     /* Weather json end */
 
+    /* TABLE SECTION FROM RENTALS.HTML START */
+
+    table,
+    th,
+    td {
+        border: 1px solid;
+    }
+
+    table {
+        /* display: flex; */
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        text-align: center;
+        background-color: white;
+    }
+
+    #theader {
+        background-color: #008EFF;
+        color: white;
+        /* padding: 10px; */
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+
+    /* TABLE SECTION FROM RENTALS.HTML END */
+
+    /*----------- FORM --------------*/
+
+    :root {
+        --fieldset: black;
+        --scoots: #008EFF;
+        --legend: white;
+        --required: red;
+        --valid: green;
+        --input: gray;
+    }
+
+
+    #formmessage {
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+    }
+
+    form fieldset {
+        margin: 1rem 1.8rem;
+        border: 1px solid var(--scoots);
+        background-color: white;
+
+        border-radius: 10px;
+        padding: .5rem 2%;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
+    fieldset ul li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    form legend {
+        color: var(--legend);
+        padding: 0 .5rem;
+        text-align: center;
+        font-size: 1.2rem;
+        background-color: var(--scoots);
+    }
+
+    form label.top,
+    form div {
+        display: block;
+        padding-top: 1rem;
+        color: var(--fieldset);
+        font-size: 1rem;
+        /* margin-left: 400px; */
+    }
+
+    form label.top input,
+    form label.top select {
+        -webkit-appearance: none;
+        display: block;
+        font-size: 1rem;
+        border: solid 1px #999;
+        border-radius: 4px;
+        padding: .75rem;
+        color: #555;
+        width: 100%;
+        max-width: 20rem;
+        background-color: #e1e8f2;
+    }
+
+    .submitBtn {
+        border: none;
+        background-color: #48B5E8;
+        color: white;
+        font-weight: bolder;
+        font-size: 22px;
+        border-radius: 1rem;
+        padding: .75rem 1.5rem;
+        margin: 0 0 2rem 2%;
+        width: 100%;
+        max-width: 18rem;
+        /* margin-left: 300px; */
+        /* margin-top: 20px;
+        margin-bottom: 10px; */
+        margin: 0px 50% 15px;
+        position: relative;
+        left: -130px;
+    }
+
+    form label.top input:required {
+        border-bottom: var(--required) solid 6px;
+    }
+
+    form label.top input:required:valid {
+        border-bottom: var(--valid) solid 6px;
+    }
+
+
+    /*----------- FORM  --------------*/
+
+    #h2form {
+        grid-column: 1 / 4;
+        text-align: center;
+        color: var(--font-color);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 60px;
+        margin-right: 60px;
+        line-height: 40px;
+    }
+
+    .imgty {
+        display: flex;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+
+        width: 700px;
+        height: 350px;
+    }
+
+    #prating {
+        margin-top: 20px;
+        margin-bottom: -16px;
+    }
+
+    #rating {
+        width: 180px;
+        margin-bottom: 0;
+        /* margin-top: 200px; */
+    }
+
+    #rangevalue {
+        font-size: 2rem;
+        color: navy;
+        /* margin-top: 20px; */
+    }
+
+    #rangevalues {
+        display: flex;
+        margin: 0 0 0 0;
+        width: 200px;
+    }
+
+    #rangevalues option {
+        flex: 1 1 auto;
+    }
+
+    /*----------- FORM ADDITIONALS  --------------*/
+
+    #joinnow {
+        color: var(--font-color);
+        text-align: center;
+    }
+
+    .membership {
+        display: inline-block;
+    }
+
+    .rentaltype {
+        display: block;
+        padding: 0.75rem 0;
+        font-size: 1rem;
+    }
+
+    #memlevel {
+        color: black;
+    }
+
+    .membership-details {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 40px;
+        padding-left: 50px;
+        width: 500px;
+        line-height: 1.5rem;
+    }
+
+    .membership-details ul {
+        list-style-type: circle;
+    }
 
 
     /* FOOTER SECTION */
@@ -357,8 +562,31 @@
         margin-top: 0px;
     }
 
+    /* MAP */
+    #map {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    /* CONTACT */
+    #contact {
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 2;
+    }
 
+    #address1 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    #address2 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
 
 
 
